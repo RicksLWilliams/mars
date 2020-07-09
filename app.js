@@ -50,6 +50,27 @@ let clickUpgrades = {
     amount:0,
     type: "click"
   },
+  plants: {
+    price: 0,
+    quantity: 1,
+    multiplier: 1,
+    amount:0,
+    type: "click"
+  },
+  power: {
+    price: 0,
+    quantity: 1,
+    multiplier: 1,
+    amount:0,
+    type: "click"
+  },
+  heat: {
+    price: 0,
+    quantity: 1,
+    multiplier: 1,
+    amount:0,
+    type: "click"
+  },
 };
 
 
