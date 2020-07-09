@@ -1,0 +1,16 @@
+* {
+  outline: 1px, black, solid;
+}
+
+.x-line {
+  outline: 1px, black, solid;
+}
+
+.x-img{
+  display: table-cell; 
+  vertical-align: middle;
+}
+
+.moon-img{
+  background-image : "https://tse1.mm.bing.net/th?id=OIP.0EQTq6QWkGLGqRGxoKiKgAHaEN&pid=Api&P=0&w=319&h=182"
+}

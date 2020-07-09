@@ -8,56 +8,72 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Moon Miner</title>
+    <title>Teraforming Mars</title>
   </head>
   <body>
 
     <header class="container-fluid bg-dark text-light">
       <div class="row">
         <div class="col-12 text-center">
-          <h1 class=>Moon Miner</h1>
+          <h1 class=>Teraforming Mars</h1>
         </div>
       </div>
     </header>
 
     <main class="containder-fluid bg-dark text-light">
       <div class="row align-items-center">
-        <h2 class="col-6 line text-center">Cheese: 
+        <h2 class="col-6 line text-center">Clicks: 
             <span id="cheese">0</span>
             <div class="row justify-content-center">
               <col-12 class="m-2">
-              <button id="pickaxes" class="btn btn-primary btn-lg" onclick="clickUpgrade('pickaxes')" >pickaxes for 20
-                
-              </button>
-              <span id="pickaxes-count">0</span>
-              <span id="pickaxes-bonus">(0)</span>
+              <button id="gold" class="btn btn-primary btn-lg" onclick="clickUpgrade('gold')" >Gold</button>
+              <span id="gold-quantity">1</span>
+              <span id="gold-amount">(0)</span>
               </col-12>
             </div>
             <div class="row justify-content-center">
               <col-12 class="m-2">
-              <button id="megaaxes" class="btn btn-primary btn-lg" onclick="clickUpgrade('megaaxes')">megaaxes for 100</button>
-              <span id="megaaxes-count">0</span>
-              <span id="megaaxes-bonus">(0)</span>
+              <button id="steel" class="btn btn-primary btn-lg" onclick="clickUpgrade('steel')">Steel</button>
+              <span id="steel-quantity">1</span>
+              <span id="steel-amount">(0)</span>
+              <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Change to Gold</button>
               </col-12>
             </div>
             <div class="row justify-content-center">
               <col-12 class="m-2">
-              <button id="minors" class="btn btn-primary btn-lg" onclick="clickUpgrade('minors')" >minors for 150</button>
-              <span id="minors-count">0</span>
-              <span id="minors-bonus">(0)</span>
+              <button id="titanium" class="btn btn-primary btn-lg" onclick="clickUpgrade('titanium')" >Titanium</button>
+              <span id="titanium-quantity">1</span>
+              <span id="titanium-amount">(0)</span>
+              <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Change to Gold</button>
               </col-12>
             </div>
             <div class="row justify-content-center">
               <col-12 class="m-2">
-              <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">rovers for 600</button>
-              <span id="rovers-count">0</span>
+              <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Plants</button>
+              <span id="rovers-count">1</span>
               <span id="rovers-bonus">(0)</span>
+              <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Greenery</button>
+              </col-12>
+            </div>
+            <div class="row justify-content-center">
+              <col-12 class="m-2">
+              <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Electricity</button>
+              <span id="rovers-count">1</span>
+              <span id="rovers-bonus">(0)</span>
+              <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Change to Heat</button>
+              </col-12>
+            </div>
+            <div class="row justify-content-center">
+              <col-12 class="m-2">
+              <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Heat</button>
+              <span id="rovers-count">1</span>
+              <span id="rovers-bonus">(0)</span>
+              <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Temperature</button>
               </col-12>
             </div>
         </h2>
         <div class="col-6 bg-dark" >
-          <img class="rounded img-fluid" src="https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fresize%3D2000%252C2000%252Cshrink%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2018-11%252F4c1a3480-f410-11e8-a5ad-73a4abd75550%26client%3Da1acac3e1b3290917d92%26signature%3D76193f17f9c4e27cfe4dc0d0042c02591d2b0721&client=amp-blogside-v2&signature=cd21554b83c9614b62f10fa91ee0bd7ba5b7d8be
-          " alt="" class="img-fluid x-line" onclick="mine()">
+          <img class="rounded img-fluid" src="https://tse1.mm.bing.net/th?id=OIP.0EQTq6QWkGLGqRGxoKiKgAHaEN&pid=Api&P=0&w=319&h=182" alt="" class="img-fluid x-line" onclick="mine()">
         </div>
       </div> 
 
