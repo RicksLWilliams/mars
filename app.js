@@ -67,10 +67,12 @@ function clickUpgrade(item) {
   }
     elm.amount += elm.quantity 
 
+
+    drawElm(item)
     //document.getElementById(item).innerText =  item + " for " + (elm.price).toString()
-    document.getElementById(item + "-quantity").innerText = (elm.quantity).toString()
-    document.getElementById(item + "-amount").innerText = "(+" + (elm.amount).toString() + ")"
-    document.getElementById("cheese").innerText = clickCount.toString()
+    //document.getElementById(item + "-quantity").innerText = (elm.quantity).toString()
+    //document.getElementById(item + "-amount").innerText = "(+" + (elm.amount).toString() + ")"
+    //document.getElementById("cheese").innerText = clickCount.toString()
 
     //if (elm.type == "click") {
     //  clickBonus += elm.multiplier
@@ -83,8 +85,23 @@ function clickChange(fromItem, toItem){
   let fromElm = clickUpgrades[fromItem]
   let toElm = clickUpgrades[toItem]
 
+  clickCount++
+
   toElm.amount += (fromElm.amount * fromElm.multiplier)
   fromElm.amount = 0
+
+  drawElm(fromItem)
+  drawElm(toItem)
+
+}
+
+function drawElm (item){
+  let elm = clickUpgrades[item];
+
+  document.getElementById(item + "-quantity").innerText = (elm.quantity).toString()
+  document.getElementById(item + "-amount").innerText = "(+" + (elm.amount).toString() + ")"
+  document.getElementById("cheese").innerText = clickCount.toString()
+
 
 }
 
