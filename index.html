@@ -1,118 +1,130 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Teraforming Mars</title>
-  </head>
-  <body>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <header class="container-fluid bg-dark text-light">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h1 class=>Teraforming Mars</h1>
-        </div>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Teraforming Mars</title>
+</head>
+
+<body>
+
+  <header class="container-fluid bg-dark text-light">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class=>Teraforming Mars</h1>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main class="containder-fluid bg-dark text-light">
-      <div class="row align-items-center">
-        <h2 class="col-6 line text-center">Clicks: 
-            <span id="cheese">0</span>
-            <div class="row justify-content-center">
-              <col-12 class="m-2">
-              <button id="gold" class="btn btn-primary btn-lg" onclick="clickUpgrade('gold')" >Gold</button>
-              <span id="gold-quantity">1</span>
-              <span id="gold-amount">(0)</span>
-              <select class="select" v-model="selected" @change="changeVault()">
-                <option value>
-                  <h3 class="edit">Standard Project</h3>
-                </option>
-                <option>
-                  <h3 class="edit">1    - Sell Card</h3>
-                </option>
-                <option>
-                  <h3 class="edit">11 - Power Plant</h3>
-                </option>
-                <option>
-                  <h3 class="edit">14 - Temperature</h3>
-                </option>
-                <option>
-                  <h3 class="edit">18 - Ocean</h3>
-                </option>
-                <option>
-                  <h3 class="edit">23 - Greenery</h3>
-                </option>
-                <option>
-                  <h3 class="edit">25 - City</h3>
-                </option>
-                <!-- <option
+  <main class="containder-fluid bg-dark text-light">
+    <div class="row align-items-center">
+      <h2 class="col-8 line text-center">Clicks:
+        <span id="cheese">0</span>
+        <div class="row justify-content-center">
+          <col-12 class="m-2">
+            <button id="gold" class="btn btn-primary btn-lg" onclick="clickUpgrade('gold')">Gold</button>
+            <span id="gold-quantity">1</span>
+            <span id="gold-amount">(0)</span>
+            <select class="select" v-model="selected" @change="changeVault()">
+              <option value>
+                <h3 class="edit">Standard Project</h3>
+              </option>
+              <option>
+                <h3 class="edit">-1 - Sell Card</h3>
+              </option>
+              <option>
+                <h3 class="edit">11 - Power Plant</h3>
+              </option>
+              <option>
+                <h3 class="edit">14 - Temperature</h3>
+              </option>
+              <option>
+                <h3 class="edit">18 - Ocean</h3>
+              </option>
+              <option>
+                <h3 class="edit">23 - Greenery</h3>
+              </option>
+              <option>
+                <h3 class="edit">25 - City</h3>
+              </option>
+              <!-- <option
                   v-for="listInfo in listItems"
                   :key="listInfo.id"
                   :value="listInfo.id"
                 >{{listInfo.name}}</option> -->
-              </select>
-              </col-12>
-            </div>
-            <div class="row justify-content-center">
-              <col-12 class="m-2">
-              <button id="steel" class="btn btn-primary btn-lg" onclick="clickUpgrade('steel')">Steel</button>
-              <span id="steel-quantity">1</span>
-              <span id="steel-amount">(0)</span>
-              <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Change to Gold</button>
-              </col-12>
-            </div>
-            <div class="row justify-content-center">
-              <col-12 class="m-2">
-              <button id="titanium" class="btn btn-primary btn-lg" onclick="clickUpgrade('titanium')" >Titanium</button>
-              <span id="titanium-quantity">1</span>
-              <span id="titanium-amount">(0)</span>
-              <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Change to Gold</button>
-              </col-12>
-            </div>
-            <div class="row justify-content-center">
-              <col-12 class="m-2">
-              <button id="plants" class="btn btn-primary btn-lg" onclick="clickUpgrade('plants')">Plants</button>
-              <span id="plants-quantity">1</span>
-              <span id="plants-amount">(0)</span>
-              <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Greenery</button>
-              </col-12>
-            </div>
-            <div class="row justify-content-center">
-              <col-12 class="m-2">
-              <button id="power" class="btn btn-primary btn-lg" onclick="clickUpgrade('power')">Power</button>
-              <span id="power-quantity">1</span>
-              <span id="power-amount">(0)</span>
-              <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Change to Heat</button>
-              </col-12>
-            </div>
-            <div class="row justify-content-center">
-              <col-12 class="m-2">
-              <button id="heat" class="btn btn-primary btn-lg" onclick="clickUpgrade('heat')">Heat</button>
-              <span id="heat-quantity">1</span>
-              <span id="heat-amount">(0)</span>
-              <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Temperature</button>
-              </col-12>
-            </div>
-        </h2>
-        <div class="col-6 bg-dark" >
-          <img class="rounded img-fluid" src="https://tse1.mm.bing.net/th?id=OIP.0EQTq6QWkGLGqRGxoKiKgAHaEN&pid=Api&P=0&w=319&h=182" alt="" class="img-fluid x-line" onclick="mine()">
+            </select>
+          </col-12>
         </div>
-      </div> 
+        <div class="row justify-content-center">
+          <col-12 class="m-2">
+            <button id="steel" class="btn btn-primary btn-lg" onclick="clickUpgrade('steel')">Steel</button>
+            <span id="steel-quantity">1</span>
+            <span id="steel-amount">(0)</span>
+            <button id="rovers" class="btn btn-primary btn-lg" onclick="clickChange('steel', 'gold')">Change to Gold</button>
+          </col-12>
+        </div>
+        <div class="row justify-content-center">
+          <col-12 class="m-2">
+            <button id="titanium" class="btn btn-primary btn-lg" onclick="clickUpgrade('titanium')">Titanium</button>
+            <span id="titanium-quantity">1</span>
+            <span id="titanium-amount">(0)</span>
+            <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Change to Gold</button>
+          </col-12>
+        </div>
+        <div class="row justify-content-center">
+          <col-12 class="m-2">
+            <button id="plants" class="btn btn-primary btn-lg" onclick="clickUpgrade('plants')">Plants</button>
+            <span id="plants-quantity">1</span>
+            <span id="plants-amount">(0)</span>
+            <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Greenery</button>
+          </col-12>
+        </div>
+        <div class="row justify-content-center">
+          <col-12 class="m-2">
+            <button id="power" class="btn btn-primary btn-lg" onclick="clickUpgrade('power')">Power</button>
+            <span id="power-quantity">1</span>
+            <span id="power-amount">(0)</span>
+            <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Change to Heat</button>
+          </col-12>
+        </div>
+        <div class="row justify-content-center">
+          <col-12 class="m-2">
+            <button id="heat" class="btn btn-primary btn-lg" onclick="clickUpgrade('heat')">Heat</button>
+            <span id="heat-quantity">1</span>
+            <span id="heat-amount">(0)</span>
+            <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Temperature</button>
+          </col-12>
+        </div>
+      </h2>
+      <div class="col-4 bg-dark">
+        <img class="rounded img-fluid"
+          src="https://tse1.mm.bing.net/th?id=OIP.0EQTq6QWkGLGqRGxoKiKgAHaEN&pid=Api&P=0&w=319&h=182" alt=""
+          class="img-fluid x-line" onclick="mine()">
+      </div>
+    </div>
 
-    </main>
+  </main>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>

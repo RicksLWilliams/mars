@@ -5,30 +5,6 @@ let clickCount = 0;
 
 
 let clickUpgrades = {
-  pickaxes: {
-    price: 20,
-    quantity: 0,
-    multiplier: 1,
-    type: "click"
-  },
-  megaaxes: {
-    price: 100,
-    quantity: 0,
-    multiplier: 5,
-    type: "click"
-  },
-  rovers: {
-    price: 600,
-    quantity: 0,
-    multiplier: 20,
-    type: "auto"
-  },
-  minors: {
-    price: 150,
-    quantity: 0,
-    multiplier: 4,
-    type: "auto"
-  },
   gold: {
     price: 0,
     quantity: 1,
@@ -39,14 +15,14 @@ let clickUpgrades = {
   steel: {
     price: 0,
     quantity: 1,
-    multiplier: 1,
+    multiplier: 2,
     amount:0,
     type: "click"
   },
   titanium: {
     price: 0,
     quantity: 1,
-    multiplier: 1,
+    multiplier: 3,
     amount:0,
     type: "click"
   },
@@ -86,7 +62,6 @@ function clickUpgrade(item) {
 
   clickCount++
 
-
   if (elm.amount < elm.price) { 
     return 
   }
@@ -102,7 +77,15 @@ function clickUpgrade(item) {
     //} else {
     //  autoBonus +=elm.multiplier
     //}
-  
+}
+
+function clickChange(fromItem, toItem){
+  let fromElm = clickUpgrades[fromItem]
+  let toElm = clickUpgrades[toItem]
+
+  toElm.amount += (fromElm.amount * fromElm.multiplier)
+  fromElm.amount = 0
+
 }
 
 function collectAutoUpgrades() {
@@ -115,4 +98,4 @@ function startInterval() {
   let collectionInterval = setInterval(collectAutoUpgrades, 3000);
 }
 
-startInterval()
+//startInterval()
