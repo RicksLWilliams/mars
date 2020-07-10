@@ -29,6 +29,34 @@
               <button id="gold" class="btn btn-primary btn-lg" onclick="clickUpgrade('gold')" >Gold</button>
               <span id="gold-quantity">1</span>
               <span id="gold-amount">(0)</span>
+              <select class="select" v-model="selected" @change="changeVault()">
+                <option value>
+                  <h3 class="edit">Standard Project</h3>
+                </option>
+                <option>
+                  <h3 class="edit">1    - Sell Card</h3>
+                </option>
+                <option>
+                  <h3 class="edit">11 - Power Plant</h3>
+                </option>
+                <option>
+                  <h3 class="edit">14 - Temperature</h3>
+                </option>
+                <option>
+                  <h3 class="edit">18 - Ocean</h3>
+                </option>
+                <option>
+                  <h3 class="edit">23 - Greenery</h3>
+                </option>
+                <option>
+                  <h3 class="edit">25 - City</h3>
+                </option>
+                <!-- <option
+                  v-for="listInfo in listItems"
+                  :key="listInfo.id"
+                  :value="listInfo.id"
+                >{{listInfo.name}}</option> -->
+              </select>
               </col-12>
             </div>
             <div class="row justify-content-center">
