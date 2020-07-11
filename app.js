@@ -4,35 +4,46 @@ let autoBonus = 0;
 let clickCount = 0;
 
 let buyUpgrades = {
-  sell:{
-    quantity:0,
+  sell: {
+    amount: 0,
+    quantity: 0,
     gold: -1,
+    tr:0,
   },
-  power:{
-    quantity:0,
+  power: {
+    amount: 0,
+    quantity: 0,
     gold: 11,
-    upgrade: "power"
+    upgrade: "power",
+    tr:0,
   },
-  temperature:{
-    quantity:19,
+  temperature: {
+    amount: 0,
+    quantity: 19,
     gold: 14,
-    heat: 8
+    heat: 8,
+    tr:1,
   },
-  ocean:{
-    quantity:9,
+  ocean: {
+    amount: 0,
+    quantity: 9,
     gold: 18,
+    tr:1,
   },
-  greenery:{
-    quantity:14,
+  greenery: {
+    amount: 0,
+    quantity: 14,
     gold: 23,
-    plants:8
+    plants: 8,
+    tr:1,
   },
-  city:{
-    quantity:0,
+  city: {
+    amount: 0,
+    quantity: 0,
     gold: 25,
-    upgrade:"gold"
+    upgrade: "gold",
+    tr:0,
   },
-
 };
 
 
@@ -41,42 +52,42 @@ let clickUpgrades = {
     price: 0,
     quantity: 1,
     multiplier: 1,
-    amount:0,
+    amount: 0,
     type: "click"
   },
   steel: {
     price: 0,
     quantity: 1,
     multiplier: 2,
-    amount:0,
+    amount: 0,
     type: "click"
   },
   titanium: {
     price: 0,
     quantity: 1,
     multiplier: 3,
-    amount:0,
+    amount: 0,
     type: "click"
   },
   plants: {
     price: 0,
     quantity: 1,
     multiplier: 1,
-    amount:0,
+    amount: 0,
     type: "click"
   },
   power: {
     price: 0,
     quantity: 1,
     multiplier: 1,
-    amount:0,
+    amount: 0,
     type: "click"
   },
   heat: {
     price: 0,
     quantity: 1,
     multiplier: 1,
-    amount:0,
+    amount: 0,
     type: "click"
   },
 };
@@ -84,36 +95,37 @@ let clickUpgrades = {
 
 
 function mine() {
-  cheese+= clickBonus
+  cheese += clickBonus
   document.getElementById("cheese").innerText = cheese.toString()
+
+}
+
+function buyUpgrade(item, resource){
+  let elm = buyUpgrades[item]
+  elm.quantity --
+
+  let elm2 = clickUpgrades[resource]
+  elm2.amount -= elm[resource]
+
+  let elmGold = clickUpgrades["gold"]
+  elmGold.quantity += elm.tr
+
+  clickCount++
+  drawElm(resource, elm2)
+  drawElm(item, elm)
+  drawElm("gold", elmGold)
 
 }
 
 function clickUpgrade(item) {
   let elm = clickUpgrades[item];
+  elm.amount += elm.quantity
 
   clickCount++
-
-  if (elm.amount < elm.price) { 
-    return 
-  }
-    elm.amount += elm.quantity 
-
-
-    drawElm(item)
-    //document.getElementById(item).innerText =  item + " for " + (elm.price).toString()
-    //document.getElementById(item + "-quantity").innerText = (elm.quantity).toString()
-    //document.getElementById(item + "-amount").innerText = "(+" + (elm.amount).toString() + ")"
-    //document.getElementById("cheese").innerText = clickCount.toString()
-
-    //if (elm.type == "click") {
-    //  clickBonus += elm.multiplier
-    //} else {
-    //  autoBonus +=elm.multiplier
-    //}
+  drawElm(item, elm)
 }
 
-function clickChange(fromItem, toItem){
+function clickChange(fromItem, toItem) {
   let fromElm = clickUpgrades[fromItem]
   let toElm = clickUpgrades[toItem]
 
@@ -122,13 +134,13 @@ function clickChange(fromItem, toItem){
   toElm.amount += (fromElm.amount * fromElm.multiplier)
   fromElm.amount = 0
 
-  drawElm(fromItem)
-  drawElm(toItem)
+  drawElm(fromItem, fromElm )
+  drawElm(toItem, toElm)
 
 }
 
-function drawElm (item){
-  let elm = clickUpgrades[item];
+function drawElm(item, elm) {
+  //let elm = clickUpgrades[item];
 
   document.getElementById(item + "-quantity").innerText = (elm.quantity).toString()
   document.getElementById(item + "-amount").innerText = "(+" + (elm.amount).toString() + ")"
@@ -139,7 +151,7 @@ function drawElm (item){
 function collectAutoUpgrades() {
   cheese += autoBonus
   document.getElementById("cheese").innerText = cheese.toString()
- 
+
 }
 
 function startInterval() {

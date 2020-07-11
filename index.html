@@ -31,12 +31,18 @@
     <div class="row">
       <div class="col-4 text-center">
         <h2 id="temperature">Temperature(19)</h2>
+        <span id="temperature-quantity">19</span>
+        <span id="temperature-amount">(0)</span>
       </div>
       <div class="col-4 text-center">
         <h2 id="ocean">Ocean(9)</h2>
+        <span id="ocean-quantity">9</span>
+        <span id="ocean-amount">(0)</span>
       </div>
       <div class="col-4 text-center">
         <h2 id="greenery">Greenery(14)</h2>
+        <span id="greenery-quantity">14</span>
+        <span id="greenery-amount">(0)</span>
       </div>
     </div>
   </header>
@@ -100,7 +106,7 @@
             <button id="plants" class="btn btn-primary btn-lg" onclick="clickUpgrade('plants')">Plants</button>
             <span id="plants-quantity">1</span>
             <span id="plants-amount">(0)</span>
-            <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Greenery</button>
+            <button id="rovers" class="btn btn-primary btn-lg" onclick="buyUpgrade('greenery','plants')">Greenery</button>
           </col-12>
         </div>
         <div class="row justify-content-center">
