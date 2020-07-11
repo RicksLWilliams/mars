@@ -3,6 +3,38 @@ let clickBonus = 1;
 let autoBonus = 0;
 let clickCount = 0;
 
+let buyUpgrades = {
+  sell:{
+    quantity:0,
+    gold: -1,
+  },
+  power:{
+    quantity:0,
+    gold: 11,
+    upgrade: "power"
+  },
+  temperature:{
+    quantity:19,
+    gold: 14,
+    heat: 8
+  },
+  ocean:{
+    quantity:9,
+    gold: 18,
+  },
+  greenery:{
+    quantity:14,
+    gold: 23,
+    plants:8
+  },
+  city:{
+    quantity:0,
+    gold: 25,
+    upgrade:"gold"
+  },
+
+};
+
 
 let clickUpgrades = {
   gold: {
@@ -101,7 +133,6 @@ function drawElm (item){
   document.getElementById(item + "-quantity").innerText = (elm.quantity).toString()
   document.getElementById(item + "-amount").innerText = "(+" + (elm.amount).toString() + ")"
   document.getElementById("cheese").innerText = clickCount.toString()
-
 
 }
 
