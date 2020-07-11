@@ -55,7 +55,7 @@
             <button id="gold" class="btn btn-primary btn-lg" onclick="clickUpgrade('gold')">Gold</button>
             <span id="gold-quantity">1</span>
             <span id="gold-amount">(0)</span>
-            <select class="select" v-model="selected" @change="changeVault()">
+            <select class="select" v-model="selected" onchange="changeVault()">
               <option value>
                 <h3 class="edit">Standard Project</h3>
               </option>
@@ -122,7 +122,7 @@
             <button id="heat" class="btn btn-primary btn-lg" onclick="clickUpgrade('heat')">Heat</button>
             <span id="heat-quantity">1</span>
             <span id="heat-amount">(0)</span>
-            <button id="rovers" class="btn btn-primary btn-lg" onclick="clickUpgrade('rovers')">Temperature</button>
+            <button id="rovers" class="btn btn-primary btn-lg" onclick="buyUpgrade('temperature','heat')">Temperature</button>
           </col-12>
         </div>
       </h2>
