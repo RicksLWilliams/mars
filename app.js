@@ -100,11 +100,27 @@ function mine() {
 
 }
 
+function buyProjet(){
+  let e = document.getElementById("sProject")
+  let result = e.options[e.selectedIndex].value
+  //console.log(e.options[e.selectedIndex])
+  //console.log(result)
+  //console.log(result.substring(5))
+  buyUpgrade(result.substring(5).toLowerCase(), "gold")
+  //e.options[e.selectedIndex].value = "Standard Project"
+}
+
 function buyUpgrade(item, resource){
   let elm = buyUpgrades[item]
+  //console.log(buyUpgrades)
+  //console.log(item)
+  //console.log("elm", elm)
   elm.quantity --
 
   let elm2 = clickUpgrades[resource]
+  //console.log(clickUpgrades)
+  //console.log(resource)
+  //console.log("elm2", elm2)
   elm2.amount -= elm[resource]
 
   let elmGold = clickUpgrades["gold"]
