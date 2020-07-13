@@ -173,8 +173,8 @@ function clickChange(fromItem, toItem) {
 function drawElm(item, elm) {
   //let elm = clickUpgrades[item];
 
-  document.getElementById(item + "-quantity").innerText = (elm.quantity).toString()
-  document.getElementById(item + "-amount").innerText = "(+" + (elm.amount).toString() + ")"
+  document.getElementById(item + "-quantity").innerText = "+" + (elm.quantity).toString()
+  document.getElementById(item + "-amount").innerText = "(" + (elm.amount).toString() + ")"
   document.getElementById("cheese").innerText = clickCount.toString()
 
 }
