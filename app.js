@@ -8,6 +8,7 @@ let buyUpgrades = {
     amount: 0,
     quantity: 0,
     gold: -1,
+    upgrade: "nothing",
     tr:0,
   },
   power: {
@@ -22,12 +23,14 @@ let buyUpgrades = {
     quantity: 19,
     gold: 14,
     heat: 8,
+    upgrade: "nothing",
     tr:1,
   },
   ocean: {
     amount: 0,
     quantity: 9,
     gold: 18,
+    upgrade: "nothing",
     tr:1,
   },
   greenery: {
@@ -35,6 +38,7 @@ let buyUpgrades = {
     quantity: 14,
     gold: 23,
     plants: 8,
+    upgrade: "nothing",
     tr:1,
   },
   city: {
@@ -90,6 +94,13 @@ let clickUpgrades = {
     amount: 0,
     type: "click"
   },
+  nothing: {
+    price: 0,
+    quantity: 0,
+    multiplier: 0,
+    amount: 0,
+    type: "click"
+  },
 };
 
 
@@ -111,10 +122,13 @@ function buyProjet(){
 }
 
 function buyUpgrade(item, resource){
+  //debugger
   let elm = buyUpgrades[item]
   //console.log(buyUpgrades)
   //console.log(item)
   //console.log("elm", elm)
+  let elmUp = clickUpgrades[elm.upgrade]
+  elmUp.quantity ++
   elm.quantity --
 
   let elm2 = clickUpgrades[resource]
@@ -129,6 +143,7 @@ function buyUpgrade(item, resource){
   clickCount++
   drawElm(resource, elm2)
   drawElm(item, elm)
+  drawElm(elm.upgrade, elmUp)
   drawElm("gold", elmGold)
 
 }
