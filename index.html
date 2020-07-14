@@ -68,12 +68,18 @@
   <main class="containder-fluid bg-dark text-light">
     <div class="row align-items-center">
       <h2 class="col-8 line text-center">
-        <div class="row justify-content-center">
-          <col-12 class="m-2">
+        <div class="row justify-content-around">
+          <col-3 class="m-2">
             <button id="gold" class="btn btn-primary btn-lg" onclick="clickUpgrade('gold')">Gold</button>
-            <span id="gold-quantity">+1</span>
+          </col-3>
+          <col-2>
+            <div id="gold-quantity">+1</div>
+          </col-2>
+          <col-2>
             <span id="gold-amount">(0)</span>
-            <select class="select" id ="sProject" onchange="buyProjet()">
+          </col-2>
+          <col-5>
+            <select class="select" id="sProject" onchange="buyProjet()">
               <option value>
                 <h3 class="edit">Standard Project</h3>
               </option>
@@ -101,47 +107,82 @@
                   :value="listInfo.id"
                 >{{listInfo.name}}</option> -->
             </select>
-          </col-12>
+          </col-5>
         </div>
-        <div class="row justify-content-center">
-          <col-12 class="m-2">
+        <div class="row justify-content-around">
+          <col-3 class="m-2">
             <button id="steel" class="btn btn-primary btn-lg" onclick="clickUpgrade('steel')">Steel</button>
+          </col-3>
+          <col-2>
             <span id="steel-quantity">+1</span>
+          </col-2>
+          <col-2>
             <span id="steel-amount">(0)</span>
-            <button id="rovers" class="btn btn-primary btn-lg" onclick="clickChange('steel', 'gold')">Change to Gold</button>
-          </col-12>
+          </col-2>
+          <col-5>
+            <button id="rovers" class="btn btn-primary btn-lg" onclick="clickChange('steel', 'gold')">Change to
+              Gold</button>
+          </col-5>
         </div>
-        <div class="row justify-content-center">
-          <col-12 class="m-2">
+        <div class="row justify-content-around">
+          <col-3 class="m-2">
             <button id="titanium" class="btn btn-primary btn-lg" onclick="clickUpgrade('titanium')">Titanium</button>
+          </col-3>
+          <col-2>
             <span id="titanium-quantity">+1</span>
+          </col-2>
+          <col-2>
             <span id="titanium-amount">(0)</span>
-            <button id="rovers" class="btn btn-primary btn-lg" onclick="clickChange('titanium', 'gold')">Change to Gold</button>
-          </col-12>
+          </col-2>
+          <col-5>
+            <button id="rovers" class="btn btn-primary btn-lg" onclick="clickChange('titanium', 'gold')">Change to
+              Gold</button>
+          </col-5>
         </div>
-        <div class="row justify-content-center">
-          <col-12 class="m-2">
-            <button id="plants" class="btn btn-primary btn-lg" onclick="clickUpgrade('plants')">Plants</button>
+        <div class="row justify-content-around">
+          <col-3 class="m-2">
+            <button id="plants" class="btn btn-primary btn-lg btn-block" onclick="clickUpgrade('plants')">Plants</button>
+          </col-3>
+          <col-2>
             <span id="plants-quantity">+1</span>
+            </col-2>
+          <col-2>
             <span id="plants-amount">(0)</span>
-            <button id="rovers" class="btn btn-primary btn-lg" onclick="buyUpgrade('greenery','plants')">Greenery</button>
-          </col-12>
+          </col-2>
+          <col-5>
+            <button id="rovers" class="btn btn-primary btn-lg btn-block"
+              onclick="buyUpgrade('greenery','plants')">Greenery</button>
+          </col-5>
         </div>
-        <div class="row justify-content-center">
-          <col-12 class="m-2">
+        <div class="row justify-content-around">
+          <col-5 class="m-2">
             <button id="power" class="btn btn-primary btn-lg" onclick="clickUpgrade('power')">Power</button>
+          </col-5>
+          <col-2>
             <span id="power-quantity">+1</span>
+          </col-2>
+          <col-2>
             <span id="power-amount">(0)</span>
-            <button id="rovers" class="btn btn-primary btn-lg" onclick="clickChange('power', 'heat')">Change to Heat</button>
-          </col-12>
+          </col-2>
+          <col-5>
+            <button id="rovers" class="btn btn-primary btn-lg" onclick="clickChange('power', 'heat')">Change to
+              Heat</button>
+          </col-5>
         </div>
-        <div class="row justify-content-center">
-          <col-12 class="m-2">
+        <div class="row justify-content-around">
+          <col-3 class="m-2">
             <button id="heat" class="btn btn-primary btn-lg" onclick="clickUpgrade('heat')">Heat</button>
+          </col-3>
+          <col-2>
             <span id="heat-quantity">+1</span>
+          </col-2>
+          <col-2>
             <span id="heat-amount">(0)</span>
-            <button id="rovers" class="btn btn-primary btn-lg" onclick="buyUpgrade('temperature','heat')">Temperature</button>
-          </col-12>
+          </col-2>
+          <col-5>
+            <button id="rovers" class="btn btn-primary btn-lg"
+              onclick="buyUpgrade('temperature','heat')">Temperature</button>
+          </col-5>
         </div>
       </h2>
       <div class="col-4 bg-dark">
