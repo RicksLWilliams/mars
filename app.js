@@ -3,6 +3,174 @@ let clickBonus = 1;
 let autoBonus = 0;
 let clickCount = 0;
 
+let corp = {
+  aridor:{
+    tags:[],
+    gold: 40,
+    upgrade:[],
+    add:[],
+  },
+  teractor:{
+    tags:["earth"],
+    gold: 60,
+    upgrade:[],
+    add:[],
+  },
+  stromcraft:{
+    tags:["jovian"],
+    gold: 48,
+    upgrade:[],
+    add:[],
+  },
+  polyphemos:{
+    tags:[],
+    gold: 50,
+    upgrade:["gold","gold","gold","gold","gold"],
+    add:["titanium","titanium","titanium","titanium","titanium"]
+  },
+  cinematics:{
+    tags:["building"],
+    gold: 30,
+    upgrade:[],
+    add:["steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel"]
+  },
+  manutech:{
+    tags:["building"],
+    gold: 25,
+    upgrade:["steel"],
+    add:[]
+  },
+  cheung:{
+    tags:["building"],
+    gold: 44,
+    upgrade:["gold","gold","gold"],
+    add:[]
+  },
+  poseidon:{
+    tags:[],
+    gold: 45,
+    upgrade:[],
+    add:[]
+  },
+  mining:{
+    tags:["building", "building"],
+    gold: 30,
+    upgrade:["steel"],
+    add:["steel","steel","steel","steel","steel"]
+  },
+  vitor:{
+    tags:["earth"],
+    gold: 45,
+    upgrade:[],
+    add:[]
+  },
+  thoregate:{
+    tags:["power"],
+    gold: 48,
+    upgrade:["power"],
+    add:[]
+  },
+  valley:{
+    tags:["earth"],
+    gold: 37,
+    upgrade:[],
+    add:[]
+  },
+  point:{
+    tags:["earth","space"],
+    gold: 38,
+    upgrade:["titanium"],
+    add:[]
+  },
+  unmi:{
+    tags:["earth"],
+    gold: 40,
+    upgrade:[],
+    add:[]
+  },
+  viron:{
+    tags:["microb"],
+    gold: 48,
+    upgrade:[],
+    add:[]
+  },
+  credicor:{
+    tags:[],
+    gold: 57,
+    upgrade:[],
+    add:[]
+  },
+  arklight:{
+    tags:["animal"],
+    gold: 45,
+    upgrade:["gold","gold"],
+    add:[]
+  },
+  saturn:{
+    tags:["jovian"],
+    gold: 42,
+    upgrade:["titanium"],
+    add:[]
+  },
+  helion:{
+    tags:["space"],
+    gold: 42,
+    upgrade:["heat","heat","heat"],
+    add:[]
+  },
+  celestic:{
+    tags:["venus"],
+    gold: 42,
+    upgrade:[],
+    add:[]
+  },
+  ecoline:{
+    tags:["plant"],
+    gold: 36,
+    upgrade:["plants","plants"],
+    add:["plants","plants","plants"]
+  },
+  inventrix:{
+    tags:["science"],
+    gold: 45,
+    upgrade:[],
+    add:[]
+  },
+  robinson:{
+    tags:[],
+    gold: 47,
+    upgrade:[],
+    add:[]
+  },
+  phoblog:{
+    tags:["space"],
+    gold: 23,
+    upgrade:[],
+    add:["titanium","titanium","titanium","titanium","titanium","titanium","titanium","titanium","titanium","titanium"]
+  },
+  tharsis:{
+    tags:["building"],
+    gold: 40,
+    upgrade:[],
+    add:[]
+  },
+  aphrodite:{
+    tags:["plant", "venus"],
+    gold: 47,
+    upgrade:["plants"],
+    add:[]
+  },
+  msi:{
+    tags:[ "venus"],
+    gold: 50,
+    upgrade:[],
+    add:[]
+  },
+  
+  
+
+}
+
 let buyUpgrades = {
   sell: {
     amount: 0,
