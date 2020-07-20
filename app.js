@@ -9,7 +9,7 @@ let corp = {
     gold: 40,
     upgrade:[],
     add:[],
-    set: "?"
+    set: "x?"
   },
   teractor:{
     tags:["earth"],
