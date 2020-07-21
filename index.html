@@ -61,8 +61,107 @@
         <span id="city-quantity">0</span>
         <span id="city-amount">(0)</span>
       </div>
-
     </div>
+
+
+
+    <div class="row">
+      <col-5>
+        <select class="select" id="sProject" onchange="buyProjet()">
+          <option value>
+            <h3 class="edit">Corparation</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="sell">aridor</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="power">teractor</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="temperature">stromcraft</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="ocean">polyphemos</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="greenery">cinematics</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">manutech</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">cheung</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">poseidon</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">mining</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">vitor</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">thoregate</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">valley</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">point</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">unmi</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">viron</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">credicor</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">arklight</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">saturn</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">helion</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">celestic</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">ecoline</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">inventrix</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">robinson</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">phoblog</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">tharsis</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">aphrodite</h3>
+          </option>
+          <option>
+            <h3 class="edit" value="city">msi</h3>
+          </option>
+          <!-- <option
+              v-for="listInfo in listItems"
+              :key="listInfo.id"
+              :value="listInfo.id"
+            >{{listInfo.name}}</option> -->
+        </select>
+      </col-5>
+    </div>
+
+
   </header>
 
   <main class="containder-fluid bg-dark text-light">
@@ -141,11 +240,12 @@
         </div>
         <div class="row justify-content-around">
           <col-3 class="m-2">
-            <button id="plants" class="btn btn-primary btn-lg btn-block" onclick="clickUpgrade('plants')">Plants</button>
+            <button id="plants" class="btn btn-primary btn-lg btn-block"
+              onclick="clickUpgrade('plants')">Plants</button>
           </col-3>
           <col-2>
             <span id="plants-quantity">+1</span>
-            </col-2>
+          </col-2>
           <col-2>
             <span id="plants-amount">(0)</span>
           </col-2>
