@@ -308,6 +308,10 @@ function mine() {
 
 }
 
+function selectCorp(){
+  console.log("seletCorp")
+}
+
 function buyProjet(){
   let e = document.getElementById("sProject")
   let result = e.options[e.selectedIndex].value
