@@ -310,6 +310,7 @@ function mine() {
 
 function selectCorp(){
   console.log("seletCorp")
+  // need to add code here
 }
 
 function buyProjet(){
