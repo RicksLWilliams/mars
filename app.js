@@ -309,8 +309,29 @@ function mine() {
 }
 
 function selectCorp(){
-  console.log("seletCorp")
+  //console.log("seletCorp")
   // need to add code here
+  let e = document.getElementById("sCorp")
+  let result = e.options[e.selectedIndex].value
+  console.log("seletCorp",result)
+
+  let elm = corp[result]
+  console.log (elm)
+
+  let elmGold = clickUpgrades["gold"]
+  elmGold.amount += elm.gold
+  drawElm("gold", elmGold)
+
+  let elmItem = {}
+
+  for (let i = 0; i < elm.upgrade.length; i++) {
+    console.log (elm.upgrade[i])
+    elmItem = clickUpgrades[elm.upgrade[i]] 
+    elmItem.quantity ++
+    drawElm(elm.upgrade[i], elmItem)
+
+  }
+
 }
 
 function buyProjet(){
