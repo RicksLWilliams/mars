@@ -3,6 +3,18 @@ let clickBonus = 1;
 let autoBonus = 0;
 let clickCount = 0;
 
+let prelude = {
+  martian:{
+    tags:["building"],
+    gold: 40,
+    upgrade:["power","steel"],
+    add:["gold","gold","gold","gold","gold","gold"],
+    global:[],
+    set: "x?"
+  },
+
+}
+
 let corp = {
   aridor:{
     tags:[],
