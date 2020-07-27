@@ -6,10 +6,138 @@ let clickCount = 0;
 let prelude = {
   martian:{
     tags:["building"],
-    gold: 40,
+    gold: 0,
     upgrade:["power","steel"],
     add:["gold","gold","gold","gold","gold","gold"],
     global:[],
+    set: "x?"
+  },
+  loan:{
+    tags:[],
+    gold: 30,
+    upgrade:[],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  society:{
+    tags:[],
+    gold: 0,
+    upgrade:["plants","power","heat"],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  biosphere:{
+    tags:["plant"],
+    gold: 0,
+    upgrade:["plants","plants"],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  orbital:{
+    tags:["space"],
+    gold: 0,
+    upgrade:["titanium"],
+    add:["titanium","titanium","titanium","titanium"],
+    global:[],
+    set: "x?"
+  },
+  research:{
+    tags:["?"],
+    gold: 0,
+    upgrade:["gold"],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  experimental:{
+    tags:["plant"],
+    gold: 0,
+    upgrade:[],
+    add:[],
+    global:["greenery"],
+    set: "x?"
+  },
+  donation:{
+    tags:[],
+    gold: 21,
+    upgrade:[],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  smelting:{
+    tags:["building"],
+    gold: 0,
+    upgrade:[],
+    add:["steel","steel","steel","steel","steel"],
+    global:["greenery","greenery"],
+    set: "x?"
+  },
+  excentric:{
+    tags:[],
+    gold: 25,
+    upgrade:[],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  io:{
+    tags:["jovian","science"],
+    gold: 0,
+    upgrade:["titanium"],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  ecology:{
+    tags:["plant","microb"],
+    gold: 0,
+    upgrade:["plants"],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  early:{
+    tags:["city","building"],
+    gold: 0,
+    upgrade:["plants"],
+    add:[],
+    global:["city"],
+    set: "x?"
+  },
+  supply:{
+    tags:[],
+    gold: 0,
+    upgrade:[],
+    add:["titanium","titanium","titanium","steel","steel","steel","steel","steel","steel","steel","steel","plants","plants","plants"],
+    global:["city"],
+    set: "x?"
+  },
+  aquifer:{
+    tags:["power"],
+    gold: -3,
+    upgrade:["power","power"],
+    add:[],
+    global:["ocean"],
+    set: "x?"
+  },
+  great:{
+    tags:[],
+    gold: -3,
+    upgrade:[],
+    add:[],
+    global:["ocean","ocean"],
+    set: "x?"
+  },
+  mohole:{
+    tags:["building"],
+    gold: 0,
+    upgrade:["steel", "heat", "heat"],
+    add:["heat", "heat"],
+    global:["ocean","ocean"],
     set: "x?"
   },
 
