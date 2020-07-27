@@ -132,12 +132,156 @@ let prelude = {
     global:["ocean","ocean"],
     set: "x?"
   },
-  mohole:{
+  moholex:{
     tags:["building"],
     gold: 0,
     upgrade:["steel", "heat", "heat"],
     add:["heat", "heat"],
-    global:["ocean","ocean"],
+    global:[],
+    set: "x?"
+  },
+  acquired:{
+    tags:[],
+    gold: 0,
+    upgrade:[],
+    add:["titanium", "titanium","titanium", "titanium","titanium", "titanium"],
+    global:[],
+    set: "x?"
+  },
+  self:{
+    tags:["city", "building"],
+    gold: 0,
+    upgrade:["gold", "gold"],
+    add:[],
+    global:["city"],
+    set: "x?"
+  },
+  biolab:{
+    tags:["science"],
+    gold: 0,
+    upgrade:["plants"],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  metal:{
+    tags:[],
+    gold: 0,
+    upgrade:[],
+    add:["titanium", "titanium","titanium", "titanium","steel", "steel","steel", "steel"],
+    global:["temperature"],
+    set: "x?"
+  },
+  nitrogen:{
+    tags:[],
+    gold: 5,
+    upgrade:["plants","gold"],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  mohole:{
+    tags:["building"],
+    gold: 0,
+    upgrade:["heat", "heat", "heat"],
+    add:["heat", "heat","heat"],
+    global:[],
+    set: "x?"
+  },
+  huge:{
+    tags:[],
+    gold: -5,
+    upgrade:[],
+    add:[],
+    global:["temperature","temperature","temperature"],
+    set: "x?"
+  },
+  polar:{
+    tags:["building"],
+    gold: 0,
+    upgrade:["heat", "heat"],
+    add:[],
+    global:["ocean"],
+    set: "x?"
+  },
+  biofuels:{
+    tags:["microb"],
+    gold: 0,
+    upgrade:["plants", "power"],
+    add:["plants", "plants"],
+    global:[],
+    set: "x?"
+  },
+  dome:{
+    tags:["plant","building"],
+    gold: 0,
+    upgrade:["plants", "gold", "gold"],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  metals:{
+    tags:[],
+    gold: 0,
+    upgrade:["gold", "steel","titanium"],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  supplier:{
+    tags:["power"],
+    gold: 0,
+    upgrade:["power","power"],
+    add:["steel","steel","steel","steel"],
+    global:[],
+    set: "x?"
+  },
+  business:{
+    tags:["earth"],
+    gold: -6,
+    upgrade:["gold","gold","gold","gold","gold","gold"],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  unmi:{
+    tags:["earth"],
+    gold: 0,
+    upgrade:["gold","gold","gold"],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  power:{
+    tags:["power"],
+    gold: 0,
+    upgrade:["power","power","power"],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  gaililean:{
+    tags:["jovian"],
+    gold: -5,
+    upgrade:["titanium","titanium"],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  allied:{
+    tags:["earth"],
+    gold: 3,
+    upgrade:["gold","gold","gold","gold"],
+    add:[],
+    global:[],
+    set: "x?"
+  },
+  mining:{
+    tags:["building"],
+    gold: 0,
+    upgrade:["steel","steel"],
+    add:["steel","steel","steel","steel"],
+    global:[],
     set: "x?"
   },
 
