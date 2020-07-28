@@ -608,20 +608,42 @@ function selectCorp(){
 
   let elmItem = {}
 
-  for (let i = 0; i < elm.upgrade.length; i++) {
-    //console.log (elm.upgrade[i])
-    elmItem = clickUpgrades[elm.upgrade[i]] 
-    elmItem.quantity ++
-    drawElm(elm.upgrade[i], elmItem)
+  // for (let i = 0; i < elm.upgrade.length; i++) {
+  //   //console.log (elm.upgrade[i])
+  //   elmItem = clickUpgrades[elm.upgrade[i]] 
+  //   elmItem.quantity ++
+  //   drawElm(elm.upgrade[i], elmItem)
 
-  }
+  // }
 
-  for (let i = 0; i < elm.add.length; i++) {
-    console.log (elm.add[i])
-    elmItem = clickUpgrades[elm.add[i]] 
-    elmItem.amount ++
-    drawElm(elm.add[i], elmItem)
+  // for (let i = 0; i < elm.add.length; i++) {
+  //   console.log (elm.add[i])
+  //   elmItem = clickUpgrades[elm.add[i]] 
+  //   elmItem.amount ++
+  //   drawElm(elm.add[i], elmItem)
+  // }
 
+  x(elm.upgrade, "quantity")
+  x(elm.add, "amount")
+
+}
+
+function x (elmList, xElm){
+  //elmList --
+  //xElm --quanity or amount
+
+  let elmItem = {}
+
+  for (let i = 0; i < elmList.length; i++) {
+    console.log (elmList[i])
+    elmItem = clickUpgrades[elmList[i]] 
+    if (xElm =="amount"){
+      elmItem.amount ++
+    }
+    if (xElm =="quantity"){
+      elmItem.quantity ++
+    }
+    drawElm(elmList[i], elmItem)
   }
 
 }
