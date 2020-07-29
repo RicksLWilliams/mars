@@ -531,7 +531,6 @@ let buyUpgrades = {
   },
 };
 
-
 let clickUpgrades = {
   gold: {
     price: 0,
@@ -606,14 +605,13 @@ function selectCorp(){
   elmGold.amount += elm.gold
   drawElm("gold", elmGold)
 
-  let elmItem = {}
+  //let elmItem = {}
 
   // for (let i = 0; i < elm.upgrade.length; i++) {
   //   //console.log (elm.upgrade[i])
   //   elmItem = clickUpgrades[elm.upgrade[i]] 
   //   elmItem.quantity ++
   //   drawElm(elm.upgrade[i], elmItem)
-
   // }
 
   // for (let i = 0; i < elm.add.length; i++) {
@@ -628,21 +626,14 @@ function selectCorp(){
 
 }
 
-function x (elmList, xElm){
-  //elmList --
-  //xElm --quanity or amount
-
+function x(elmList, xElm){
   let elmItem = {}
 
   for (let i = 0; i < elmList.length; i++) {
     console.log (elmList[i])
     elmItem = clickUpgrades[elmList[i]] 
-    if (xElm =="amount"){
-      elmItem.amount ++
-    }
-    if (xElm =="quantity"){
-      elmItem.quantity ++
-    }
+    if (xElm =="amount"){elmItem.amount ++}
+    if (xElm =="quantity"){elmItem.quantity ++}
     drawElm(elmList[i], elmItem)
   }
 
