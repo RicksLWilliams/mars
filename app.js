@@ -627,6 +627,7 @@ function selectCorp(){
 }
 
 function x(elmList, xElm){
+  //rename this function
   let elmItem = {}
 
   for (let i = 0; i < elmList.length; i++) {
