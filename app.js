@@ -621,12 +621,12 @@ function selectCorp(){
   //   drawElm(elm.add[i], elmItem)
   // }
 
-  x(elm.upgrade, "quantity")
-  x(elm.add, "amount")
+  updateResources(elm.upgrade, "quantity")
+  updateResources(elm.add, "amount")
 
 }
 
-function x(elmList, xElm){
+function updateResources(elmList, xElm){
   //rename this function
   let elmItem = {}
 
