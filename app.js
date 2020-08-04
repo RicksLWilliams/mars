@@ -602,8 +602,8 @@ function selectCorp(){
   console.log (elm)
 
   let elmGold = clickUpgrades["gold"]
-  elmGold.amount += elm.gold
-  drawElm("gold", elmGold)
+  //elmGold.amount += elm.gold
+  //drawElm("gold", elmGold)
 
   //let elmItem = {}
 
@@ -621,20 +621,21 @@ function selectCorp(){
   //   drawElm(elm.add[i], elmItem)
   // }
 
-  updateResources(elm.upgrade, "quantity")
-  updateResources(elm.add, "amount")
+  updateResources(["gold"], "amount", elm.gold)
+  updateResources(elm.upgrade, "quantity", 1)
+  updateResources(elm.add, "amount", 1)
 
 }
 
-function updateResources(elmList, xElm){
+function updateResources(elmList, xElm, change){
   //rename this function
   let elmItem = {}
 
   for (let i = 0; i < elmList.length; i++) {
     console.log (elmList[i])
     elmItem = clickUpgrades[elmList[i]] 
-    if (xElm =="amount"){elmItem.amount ++}
-    if (xElm =="quantity"){elmItem.quantity ++}
+    if (xElm =="amount"){elmItem.amount += change}
+    if (xElm =="quantity"){elmItem.quantity += change}
     drawElm(elmList[i], elmItem)
   }
 
