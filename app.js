@@ -596,10 +596,10 @@ function selectCorp(){
   // need to add code here
   let e = document.getElementById("sCorp")
   let result = e.options[e.selectedIndex].value
-  console.log("seletCorp",result)
+  //console.log("seletCorp",result)
 
   let elm = corp[result]
-  console.log (elm)
+  //console.log (elm)
 
   let elmGold = clickUpgrades["gold"]
   //elmGold.amount += elm.gold
@@ -632,10 +632,14 @@ function updateResources(elmList, xElm, change){
   let elmItem = {}
 
   for (let i = 0; i < elmList.length; i++) {
-    console.log (elmList[i])
+    //console.log (elmList[i])
     elmItem = clickUpgrades[elmList[i]] 
-    if (xElm =="amount"){elmItem.amount += change}
-    if (xElm =="quantity"){elmItem.quantity += change}
+    //console.log("updateResources",elmItem["amount"] )
+    //console.log("updateResources",elmItem["quantity"] )
+    //console.log("updateResources",elmItem[xElm] )
+    elmItem[xElm]+= change
+    //if (xElm =="amount"){elmItem.amount += change}
+    //if (xElm =="quantity"){elmItem.quantity += change}
     drawElm(elmList[i], elmItem)
   }
 
