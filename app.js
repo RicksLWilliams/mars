@@ -592,34 +592,12 @@ function mine() {
 }
 
 function selectCorp(){
-  //console.log("seletCorp")
-  // need to add code here
   let e = document.getElementById("sCorp")
   let result = e.options[e.selectedIndex].value
-  //console.log("seletCorp",result)
 
   let elm = corp[result]
-  //console.log (elm)
 
-  let elmGold = clickUpgrades["gold"]
-  //elmGold.amount += elm.gold
-  //drawElm("gold", elmGold)
-
-  //let elmItem = {}
-
-  // for (let i = 0; i < elm.upgrade.length; i++) {
-  //   //console.log (elm.upgrade[i])
-  //   elmItem = clickUpgrades[elm.upgrade[i]] 
-  //   elmItem.quantity ++
-  //   drawElm(elm.upgrade[i], elmItem)
-  // }
-
-  // for (let i = 0; i < elm.add.length; i++) {
-  //   console.log (elm.add[i])
-  //   elmItem = clickUpgrades[elm.add[i]] 
-  //   elmItem.amount ++
-  //   drawElm(elm.add[i], elmItem)
-  // }
+  //let elmGold = clickUpgrades["gold"]
 
   updateResources(["gold"], "amount", elm.gold)
   updateResources(elm.upgrade, "quantity", 1)
@@ -628,18 +606,11 @@ function selectCorp(){
 }
 
 function updateResources(elmList, xElm, change){
-  //rename this function
   let elmItem = {}
 
   for (let i = 0; i < elmList.length; i++) {
-    //console.log (elmList[i])
     elmItem = clickUpgrades[elmList[i]] 
-    //console.log("updateResources",elmItem["amount"] )
-    //console.log("updateResources",elmItem["quantity"] )
-    //console.log("updateResources",elmItem[xElm] )
     elmItem[xElm]+= change
-    //if (xElm =="amount"){elmItem.amount += change}
-    //if (xElm =="quantity"){elmItem.quantity += change}
     drawElm(elmList[i], elmItem)
   }
 
@@ -648,9 +619,6 @@ function updateResources(elmList, xElm, change){
 function buyProjet(){
   let e = document.getElementById("sProject")
   let result = e.options[e.selectedIndex].value
-  //console.log(e.options[e.selectedIndex])
-  //console.log(result)
-  //console.log(result.substring(5))
   buyUpgrade(result.substring(5).toLowerCase(), "gold")
   //e.options[e.selectedIndex].value = "Standard Project"
 }
@@ -658,17 +626,11 @@ function buyProjet(){
 function buyUpgrade(item, resource){
   //debugger
   let elm = buyUpgrades[item]
-  //console.log(buyUpgrades)
-  //console.log(item)
-  //console.log("elm", elm)
   let elmUp = clickUpgrades[elm.upgrade]
   elmUp.quantity ++
   elm.quantity --
 
   let elm2 = clickUpgrades[resource]
-  //console.log(clickUpgrades)
-  //console.log(resource)
-  //console.log("elm2", elm2)
   elm2.amount -= elm[resource]
 
   let elmGold = clickUpgrades["gold"]
