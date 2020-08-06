@@ -597,8 +597,6 @@ function selectCorp(){
 
   let elm = corp[result]
 
-  //let elmGold = clickUpgrades["gold"]
-
   updateResources(["gold"], "amount", elm.gold)
   updateResources(elm.upgrade, "quantity", 1)
   updateResources(elm.add, "amount", 1)
@@ -620,15 +618,14 @@ function buyProjet(){
   let e = document.getElementById("sProject")
   let result = e.options[e.selectedIndex].value
   buyUpgrade(result.substring(5).toLowerCase(), "gold")
-  //e.options[e.selectedIndex].value = "Standard Project"
 }
 
 function buyUpgrade(item, resource){
-  //debugger
   let elm = buyUpgrades[item]
+  elm.quantity --
+
   let elmUp = clickUpgrades[elm.upgrade]
   elmUp.quantity ++
-  elm.quantity --
 
   let elm2 = clickUpgrades[resource]
   elm2.amount -= elm[resource]
@@ -641,7 +638,6 @@ function buyUpgrade(item, resource){
   drawElm(item, elm)
   drawElm(elm.upgrade, elmUp)
   drawElm("gold", elmGold)
-
 }
 
 function clickUpgrade(item) {
