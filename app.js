@@ -583,8 +583,6 @@ let clickUpgrades = {
   },
 };
 
-
-
 function mine() {
   cheese += clickBonus
   document.getElementById("cheese").innerText = cheese.toString()
