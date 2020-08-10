@@ -126,7 +126,7 @@ let prelude = {
   },
   great:{
     tags:[],
-    gold: -3,
+    gold: 0,
     upgrade:[],
     add:[],
     global:["ocean","ocean"],
@@ -594,6 +594,18 @@ function selectCorp(){
   let result = e.options[e.selectedIndex].value
 
   let elm = corp[result]
+
+  updateResources(["gold"], "amount", elm.gold)
+  updateResources(elm.upgrade, "quantity", 1)
+  updateResources(elm.add, "amount", 1)
+
+}
+
+function selectPrelude(){
+  let e = document.getElementById("sPrelude")
+  let result = e.options[e.selectedIndex].value
+
+  let elm = prelude[result]
 
   updateResources(["gold"], "amount", elm.gold)
   updateResources(elm.upgrade, "quantity", 1)
