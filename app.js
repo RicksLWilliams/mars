@@ -602,6 +602,8 @@ function selectCorp(){
 }
 
 function selectPrelude(){
+  //combine these functions
+  //add update global 
   let e = document.getElementById("sPrelude")
   let result = e.options[e.selectedIndex].value
 
