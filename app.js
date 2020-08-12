@@ -612,6 +612,7 @@ function selectPrelude(){
   updateResources(["gold"], "amount", elm.gold)
   updateResources(elm.upgrade, "quantity", 1)
   updateResources(elm.add, "amount", 1)
+  //update global
 
 }
 
