@@ -612,15 +612,32 @@ function selectPrelude(){
   updateResources(["gold"], "amount", elm.gold)
   updateResources(elm.upgrade, "quantity", 1)
   updateResources(elm.add, "amount", 1)
+
   //update global
-
-  //let elmItem = {}
   let elmList = elm.global
-  console.log("selectPrelude", elm)
-
+  //console.log("selectPrelude", elm)
   for (let i = 0; i < elmList.length; i++) {
     buyUpgrade(elmList[i] , "gold")
   }
+
+}
+
+function playCard(item, deck){
+  //replace selectPrelude,selectCorp, selectCard?
+  let result = item.options[item.selectedIndex].value
+  let elm = deck[result]
+
+  updateResources(["gold"], "amount", elm.gold)
+  updateResources(elm.upgrade, "quantity", 1)
+  updateResources(elm.add, "amount", 1)
+
+    //update global
+    let elmList = elm.global
+    //console.log("selectPrelude", elm)
+    for (let i = 0; i < elmList.length; i++) {
+      buyUpgrade(elmList[i] , "gold")
+    }
+
 
 }
 
