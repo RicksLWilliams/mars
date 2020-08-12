@@ -54,7 +54,7 @@ let prelude = {
   },
   experimental:{
     tags:["plant"],
-    gold: 0,
+    gold: 23,
     upgrade:[],
     add:[],
     global:["greenery"],
@@ -70,7 +70,7 @@ let prelude = {
   },
   smelting:{
     tags:["building"],
-    gold: 0,
+    gold: 46,
     upgrade:[],
     add:["steel","steel","steel","steel","steel"],
     global:["greenery","greenery"],
@@ -102,7 +102,7 @@ let prelude = {
   },
   early:{
     tags:["city","building"],
-    gold: 0,
+    gold: 25,
     upgrade:["plants"],
     add:[],
     global:["city"],
@@ -118,7 +118,7 @@ let prelude = {
   },
   aquifer:{
     tags:["power"],
-    gold: -3,
+    gold: 15,
     upgrade:["power","power"],
     add:[],
     global:["ocean"],
@@ -126,7 +126,7 @@ let prelude = {
   },
   great:{
     tags:[],
-    gold: 0,
+    gold: 36,
     upgrade:[],
     add:[],
     global:["ocean","ocean"],
@@ -150,7 +150,7 @@ let prelude = {
   },
   self:{
     tags:["city", "building"],
-    gold: 0,
+    gold: 25,
     upgrade:["gold", "gold"],
     add:[],
     global:["city"],
@@ -166,7 +166,7 @@ let prelude = {
   },
   metal:{
     tags:[],
-    gold: 0,
+    gold: 14,
     upgrade:[],
     add:["titanium", "titanium","titanium", "titanium","steel", "steel","steel", "steel"],
     global:["temperature"],
@@ -190,7 +190,7 @@ let prelude = {
   },
   huge:{
     tags:[],
-    gold: -5,
+    gold: 37,
     upgrade:[],
     add:[],
     global:["temperature","temperature","temperature"],
@@ -198,7 +198,7 @@ let prelude = {
   },
   polar:{
     tags:["building"],
-    gold: 0,
+    gold: 18,
     upgrade:["heat", "heat"],
     add:[],
     global:["ocean"],
@@ -613,6 +613,14 @@ function selectPrelude(){
   updateResources(elm.upgrade, "quantity", 1)
   updateResources(elm.add, "amount", 1)
   //update global
+
+  //let elmItem = {}
+  let elmList = elm.global
+  console.log("selectPrelude", elm)
+
+  for (let i = 0; i < elmList.length; i++) {
+    buyUpgrade(elmList[i] , "gold")
+  }
 
 }
 
