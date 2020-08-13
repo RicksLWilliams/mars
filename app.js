@@ -622,10 +622,10 @@ function selectPrelude(){
 
 }
 
-function playCard(item, deck){
+function playCard(card, deck){
   //replace selectPrelude,selectCorp, selectCard?
-  let result = item.options[item.selectedIndex].value
-  let elm = deck[result]
+  //let result = item.options[item.selectedIndex].value
+  let elm = deck[card]
 
   updateResources(["gold"], "amount", elm.gold)
   updateResources(elm.upgrade, "quantity", 1)
