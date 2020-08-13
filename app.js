@@ -293,6 +293,7 @@ let corp = {
     gold: 40,
     upgrade:[],
     add:[],
+    global:[],
     set: "x?"
   },
   teractor:{
@@ -300,6 +301,7 @@ let corp = {
     gold: 60,
     upgrade:[],
     add:[],
+    global:[],
     set: "?"
   },
   stromcraft:{
@@ -307,6 +309,7 @@ let corp = {
     gold: 48,
     upgrade:[],
     add:[],
+    global:[],
     set: "?"
   },
   polyphemos:{
@@ -314,6 +317,7 @@ let corp = {
     gold: 50,
     upgrade:["gold","gold","gold","gold","gold"],
     add:["titanium","titanium","titanium","titanium","titanium"],
+    global:[],
     set: "?"
   },
   cinematics:{
@@ -321,6 +325,7 @@ let corp = {
     gold: 30,
     upgrade:[],
     add:["steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel"],
+    global:[],
     set: "?"
   },
   manutech:{
@@ -328,6 +333,7 @@ let corp = {
     gold: 25,
     upgrade:["steel"],
     add:[],
+    global:[],
     set: "?"
   },
   cheung:{
@@ -335,6 +341,7 @@ let corp = {
     gold: 44,
     upgrade:["gold","gold","gold"],
     add:[],
+    global:[],
     set: "?"
   },
   poseidon:{
@@ -342,6 +349,7 @@ let corp = {
     gold: 45,
     upgrade:[],
     add:[],
+    global:[],
     set: "?"
   },
   mining:{
@@ -349,6 +357,7 @@ let corp = {
     gold: 30,
     upgrade:["steel"],
     add:["steel","steel","steel","steel","steel"],
+    global:[],
     set: "?"
   },
   vitor:{
@@ -356,6 +365,7 @@ let corp = {
     gold: 45,
     upgrade:[],
     add:[],
+    global:[],
     set: "?"
   },
   thoregate:{
@@ -363,6 +373,7 @@ let corp = {
     gold: 48,
     upgrade:["power"],
     add:[],
+    global:[],
     set: "?"
   },
   valley:{
@@ -370,6 +381,7 @@ let corp = {
     gold: 37,
     upgrade:[],
     add:[],
+    global:[],
     set: "?"
   },
   point:{
@@ -377,6 +389,7 @@ let corp = {
     gold: 38,
     upgrade:["titanium"],
     add:[],
+    global:[],
     set: "?"
   },
   unmi:{
@@ -384,6 +397,7 @@ let corp = {
     gold: 40,
     upgrade:[],
     add:[],
+    global:[],
     set: "?"
 
   },
@@ -392,14 +406,16 @@ let corp = {
     gold: 48,
     upgrade:[],
     add:[],
+    global:[],
     set: "?"
   },
   credicor:{
     tags:[],
     gold: 57,
     upgrade:[],
-    add:[]
-    ,set: "?"
+    add:[],
+    global:[],
+    set: "?"
 
   },
   arklight:{
@@ -407,6 +423,7 @@ let corp = {
     gold: 45,
     upgrade:["gold","gold"],
     add:[],
+    global:[],
     set: "?"
   },
   saturn:{
@@ -414,6 +431,7 @@ let corp = {
     gold: 42,
     upgrade:["titanium"],
     add:[],
+    global:[],
     set: "?"
   },
   helion:{
@@ -421,6 +439,7 @@ let corp = {
     gold: 42,
     upgrade:["heat","heat","heat"],
     add:[],
+    global:[],
     set: "?"
   },
   celestic:{
@@ -428,6 +447,7 @@ let corp = {
     gold: 42,
     upgrade:[],
     add:[],
+    global:[],
     set: "?"
   },
   ecoline:{
@@ -435,6 +455,7 @@ let corp = {
     gold: 36,
     upgrade:["plants","plants"],
     add:["plants","plants","plants"],
+    global:[],
     set: "?"
   },
   inventrix:{
@@ -442,6 +463,7 @@ let corp = {
     gold: 45,
     upgrade:[],
     add:[],
+    global:[],
     set: "?"
   },
   robinson:{
@@ -449,6 +471,7 @@ let corp = {
     gold: 47,
     upgrade:[],
     add:[],
+    global:[],
     set: "?"
   },
   phoblog:{
@@ -456,6 +479,7 @@ let corp = {
     gold: 23,
     upgrade:[],
     add:["titanium","titanium","titanium","titanium","titanium","titanium","titanium","titanium","titanium","titanium"],
+    global:[],
     set: "?"
   },
   tharsis:{
@@ -463,6 +487,7 @@ let corp = {
     gold: 40,
     upgrade:[],
     add:[],
+    global:[],
     set: "?"
   },
   aphrodite:{
@@ -470,6 +495,7 @@ let corp = {
     gold: 47,
     upgrade:["plants"],
     add:[],
+    global:[],
     set: "?"
   },
   msi:{
@@ -477,6 +503,7 @@ let corp = {
     gold: 50,
     upgrade:[],
     add:[],
+    global:[],
     set: "?"
   },
   
