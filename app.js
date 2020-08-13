@@ -6,281 +6,281 @@ let clickCount = 0;
 let prelude = {
   martian:{
     tags:["building"],
-    gold: 0,
-    upgrade:["power","steel"],
-    add:["gold","gold","gold","gold","gold","gold"],
+    //gold: 0,
+    upgrade:["power(1)","steel(1)"],
+    add:["gold(6)"],
     global:[],
     set: "x?"
   },
   loan:{
     tags:[],
-    gold: 30,
-    upgrade:[],
-    add:[],
+    //gold: 0,
+    upgrade:["gold(-2)"],
+    add:["gold(30)"],
     global:[],
     set: "x?"
   },
   society:{
     tags:[],
-    gold: 0,
-    upgrade:["plants","power","heat"],
+    //gold: 0,
+    upgrade:["gold(-1)","plants(1)","power(1)","heat(1)"],
     add:[],
     global:[],
     set: "x?"
   },
   biosphere:{
     tags:["plant"],
-    gold: 0,
-    upgrade:["plants","plants"],
+    //gold: 0,
+    upgrade:["plants(2)"],
     add:[],
     global:[],
     set: "x?"
   },
   orbital:{
     tags:["space"],
-    gold: 0,
-    upgrade:["titanium"],
-    add:["titanium","titanium","titanium","titanium"],
+    //gold: 0,
+    upgrade:["titanium(1)"],
+    add:["titanium(4)"],
     global:[],
     set: "x?"
   },
   research:{
     tags:["?"],
-    gold: 0,
-    upgrade:["gold"],
+    //gold: 0,
+    upgrade:["gold(1)"],
     add:[],
     global:[],
     set: "x?"
   },
   experimental:{
     tags:["plant"],
-    gold: 23,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(23)"],
     global:["greenery"],
     set: "x?"
   },
   donation:{
     tags:[],
-    gold: 21,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(21)"],
     global:[],
     set: "x?"
   },
   smelting:{
     tags:["building"],
-    gold: 46,
+    //gold: 0,
     upgrade:[],
-    add:["steel","steel","steel","steel","steel"],
+    add:["gold(46)", "steel(5)"],
     global:["greenery","greenery"],
     set: "x?"
   },
   excentric:{
     tags:[],
-    gold: 25,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(25)"],
     global:[],
     set: "x?"
   },
   io:{
     tags:["jovian","science"],
-    gold: 0,
-    upgrade:["titanium"],
+    //gold: 0,
+    upgrade:["titanium(1)"],
     add:[],
     global:[],
     set: "x?"
   },
   ecology:{
     tags:["plant","microb"],
-    gold: 0,
-    upgrade:["plants"],
+    //gold: 0,
+    upgrade:["plants(1)"],
     add:[],
     global:[],
     set: "x?"
   },
   early:{
     tags:["city","building"],
-    gold: 25,
-    upgrade:["plants"],
-    add:[],
+    //gold: 0,
+    upgrade:["plants(1)"],
+    add:["gold(25)"],
     global:["city"],
     set: "x?"
   },
   supply:{
     tags:[],
-    gold: 0,
+    //gold: 0,
     upgrade:[],
-    add:["titanium","titanium","titanium","steel","steel","steel","steel","steel","steel","steel","steel","plants","plants","plants"],
-    global:["city"],
+    add:["titanium(3)","steel(8)","plants(3)"],
+    global:[],
     set: "x?"
   },
   aquifer:{
     tags:["power"],
-    gold: 15,
-    upgrade:["power","power"],
-    add:[],
+    //gold: 0,
+    upgrade:["power(2)"],
+    add:["gold(15)"],
     global:["ocean"],
     set: "x?"
   },
   great:{
     tags:[],
-    gold: 36,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(36)"],
     global:["ocean","ocean"],
     set: "x?"
   },
   moholex:{
     tags:["building"],
-    gold: 0,
-    upgrade:["steel", "heat", "heat"],
-    add:["heat", "heat"],
+    //gold: 0,
+    upgrade:["steel(1)", "heat(2)"],
+    add:["heat(2)"],
     global:[],
     set: "x?"
   },
   acquired:{
     tags:[],
-    gold: 0,
+    //gold: 0,
     upgrade:[],
-    add:["titanium", "titanium","titanium", "titanium","titanium", "titanium"],
+    add:["titanium(6)"],
     global:[],
     set: "x?"
   },
   self:{
     tags:["city", "building"],
-    gold: 25,
-    upgrade:["gold", "gold"],
-    add:[],
+    //gold: 0,
+    upgrade:["gold(2)"],
+    add:["gold(25)"],
     global:["city"],
     set: "x?"
   },
   biolab:{
     tags:["science"],
-    gold: 0,
-    upgrade:["plants"],
+    //gold: 0,
+    upgrade:["plants(1)"],
     add:[],
     global:[],
     set: "x?"
   },
   metal:{
     tags:[],
-    gold: 14,
+    //gold: 0,
     upgrade:[],
-    add:["titanium", "titanium","titanium", "titanium","steel", "steel","steel", "steel"],
+    add:["gold(14)","titanium(4)","steel(4)"],
     global:["temperature"],
     set: "x?"
   },
   nitrogen:{
     tags:[],
-    gold: 5,
-    upgrade:["plants","gold"],
-    add:[],
+    //gold: 0,
+    upgrade:["plants(1)","gold(1)"],
+    add:["gold(5)"],
     global:[],
     set: "x?"
   },
   mohole:{
     tags:["building"],
-    gold: 0,
-    upgrade:["heat", "heat", "heat"],
-    add:["heat", "heat","heat"],
+    //gold: 0,
+    upgrade:["heat(3)"],
+    add:["heat(3)"],
     global:[],
     set: "x?"
   },
   huge:{
     tags:[],
-    gold: 37,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(37)"],
     global:["temperature","temperature","temperature"],
     set: "x?"
   },
   polar:{
     tags:["building"],
-    gold: 18,
-    upgrade:["heat", "heat"],
-    add:[],
+    //gold: 0,
+    upgrade:["heat(2)"],
+    add:["gold(18)"],
     global:["ocean"],
     set: "x?"
   },
   biofuels:{
     tags:["microb"],
-    gold: 0,
-    upgrade:["plants", "power"],
-    add:["plants", "plants"],
+    //gold: 0,
+    upgrade:["plants(1)", "power(1)"],
+    add:["plants(2)"],
     global:[],
     set: "x?"
   },
   dome:{
     tags:["plant","building"],
-    gold: 0,
-    upgrade:["plants", "gold", "gold"],
+    //gold: 0,
+    upgrade:["plants(1)", "gold(2)"],
     add:[],
     global:[],
     set: "x?"
   },
   metals:{
     tags:[],
-    gold: 0,
-    upgrade:["gold", "steel","titanium"],
+    //gold: 0,
+    upgrade:["gold(1)", "steel(1)","titanium(1)"],
     add:[],
     global:[],
     set: "x?"
   },
   supplier:{
     tags:["power"],
-    gold: 0,
-    upgrade:["power","power"],
-    add:["steel","steel","steel","steel"],
+    //gold: 0,
+    upgrade:["power(2)"],
+    add:["steel(4)"],
     global:[],
     set: "x?"
   },
   business:{
     tags:["earth"],
-    gold: -6,
-    upgrade:["gold","gold","gold","gold","gold","gold"],
-    add:[],
+    //gold: 0,
+    upgrade:["gold(6)"],
+    add:["gold(-6)"],
     global:[],
     set: "x?"
   },
   unmi:{
     tags:["earth"],
-    gold: 0,
-    upgrade:["gold","gold","gold"],
+    //gold: 0,
+    upgrade:["gold(3)"],
     add:[],
     global:[],
     set: "x?"
   },
   power:{
     tags:["power"],
-    gold: 0,
-    upgrade:["power","power","power"],
+    //gold: 0,
+    upgrade:["power(3)"],
     add:[],
     global:[],
     set: "x?"
   },
   gaililean:{
     tags:["jovian"],
-    gold: -5,
-    upgrade:["titanium","titanium"],
-    add:[],
+    //gold: 0,
+    upgrade:["titanium(2)"],
+    add:["gold(-5)"],
     global:[],
     set: "x?"
   },
   allied:{
     tags:["earth"],
-    gold: 3,
-    upgrade:["gold","gold","gold","gold"],
-    add:[],
+    //gold: 0,
+    upgrade:["gold(4)"],
+    add:["gold(3)"],
     global:[],
     set: "x?"
   },
   mining:{
     tags:["building"],
-    gold: 0,
-    upgrade:["steel","steel"],
-    add:["steel","steel","steel","steel"],
+    //gold: 0,
+    upgrade:["steel(2)"],
+    add:["steel(4)"],
     global:[],
     set: "x?"
   },
@@ -622,9 +622,9 @@ function selectCorp(){
 
   let elm = corp[result]
 
-  updateResources(["gold"], "amount", elm.gold)
-  updateResources(elm.upgrade, "quantity", 1)
-  updateResources(elm.add, "amount", 1)
+  //updateResources(["gold"], "amount", elm.gold)
+  updateResources(elm.upgrade, "quantity")
+  updateResources(elm.add, "amount")
 
 }
 
@@ -635,10 +635,10 @@ function selectPrelude(){
   let result = e.options[e.selectedIndex].value
 
   let elm = prelude[result]
-
-  updateResources(["gold"], "amount", elm.gold)
-  updateResources(elm.upgrade, "quantity", 1)
-  updateResources(elm.add, "amount", 1)
+//debugger
+  //updateResources(["gold"], "amount", elm.gold)
+  updateResources(elm.upgrade, "quantity")
+  updateResources(elm.add, "amount")
 
   //update global
   let elmList = elm.global
@@ -654,9 +654,9 @@ function playCard(card, deck){
   //let result = item.options[item.selectedIndex].value
   let elm = deck[card]
 
-  updateResources(["gold"], "amount", elm.gold)
-  updateResources(elm.upgrade, "quantity", 1)
-  updateResources(elm.add, "amount", 1)
+  //updateResources(["gold"], "amount", elm.gold)
+  updateResources(elm.upgrade, "quantity")
+  updateResources(elm.add, "amount")
 
     //update global
     let elmList = elm.global
@@ -668,13 +668,19 @@ function playCard(card, deck){
 
 }
 
-function updateResources(elmList, xElm, change){
+function updateResources(elmList, xElm){
   let elmItem = {}
+  //debugger
 
   for (let i = 0; i < elmList.length; i++) {
-    elmItem = clickUpgrades[elmList[i]] 
-    elmItem[xElm]+= change
-    drawElm(elmList[i], elmItem)
+    let elm = elmList[i]
+    let start = elm.indexOf("(")
+    let item = elm.substring(0, start  )
+    let change = elm.substring(start + 1, elm.length -1)
+
+    elmItem = clickUpgrades[item] 
+    elmItem[xElm]+= parseInt(change)
+    drawElm(item, elmItem)
   }
 
 }
