@@ -312,7 +312,7 @@ let corp = {
   polyphemos:{
     tags:[],
     upgrade:["gold(5)"],
-    add:["gold(50)"],
+    add:["gold(50)","titanium(5)"],
     global:[],
     set: "?"
   },
@@ -612,7 +612,7 @@ function makeSelection(element, deck){
 
 function playCard(card, deck){
   let elm = deck[card]
-
+  
   updateResources(elm.upgrade, "quantity")
   updateResources(elm.add, "amount")
 
