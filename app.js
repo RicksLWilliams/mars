@@ -290,219 +290,219 @@ let prelude = {
 let corp = {
   aridor:{
     tags:[],
-    gold: 40,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(40)"],
     global:[],
     set: "x?"
   },
   teractor:{
     tags:["earth"],
-    gold: 60,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(60)"],
     global:[],
     set: "?"
   },
   stromcraft:{
     tags:["jovian"],
-    gold: 48,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(48)"],
     global:[],
     set: "?"
   },
   polyphemos:{
     tags:[],
-    gold: 50,
-    upgrade:["gold","gold","gold","gold","gold"],
-    add:["titanium","titanium","titanium","titanium","titanium"],
+    //gold: 0,
+    upgrade:["gold(5)"],
+    add:["gold(50)"],
     global:[],
     set: "?"
   },
   cinematics:{
     tags:["building"],
-    gold: 30,
+    //gold: 0,
     upgrade:[],
-    add:["steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel","steel"],
+    add:["gold(30)", "steel(20)"],
     global:[],
     set: "?"
   },
   manutech:{
     tags:["building"],
-    gold: 25,
-    upgrade:["steel"],
-    add:[],
+    //gold: 0,
+    upgrade:["steel(1)"],
+    add:["gold(25)"],
     global:[],
     set: "?"
   },
   cheung:{
     tags:["building"],
-    gold: 44,
-    upgrade:["gold","gold","gold"],
-    add:[],
+    //gold: 44,
+    upgrade:["gold(3)"],
+    add:["gold(44)"],
     global:[],
     set: "?"
   },
   poseidon:{
     tags:[],
-    gold: 45,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(45)"],
     global:[],
     set: "?"
   },
   mining:{
     tags:["building", "building"],
-    gold: 30,
-    upgrade:["steel"],
-    add:["steel","steel","steel","steel","steel"],
+    //gold: 0,
+    upgrade:["steel(1)"],
+    add:["gold(30)","steel(5)"],
     global:[],
     set: "?"
   },
   vitor:{
     tags:["earth"],
-    gold: 45,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(45)"],
     global:[],
     set: "?"
   },
   thoregate:{
     tags:["power"],
-    gold: 48,
-    upgrade:["power"],
-    add:[],
+    //gold: 0,
+    upgrade:["power(1)"],
+    add:["gold(48)"],
     global:[],
     set: "?"
   },
   valley:{
     tags:["earth"],
-    gold: 37,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(37)"],
     global:[],
     set: "?"
   },
   point:{
     tags:["earth","space"],
-    gold: 38,
-    upgrade:["titanium"],
-    add:[],
+    //gold: 0,
+    upgrade:["titanium(1)"],
+    add:["gold(38)"],
     global:[],
     set: "?"
   },
   unmi:{
     tags:["earth"],
-    gold: 40,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(40)"],
     global:[],
     set: "?"
 
   },
   viron:{
     tags:["microb"],
-    gold: 48,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(48)"],
     global:[],
     set: "?"
   },
   credicor:{
     tags:[],
-    gold: 57,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(57)"],
     global:[],
     set: "?"
 
   },
   arklight:{
     tags:["animal"],
-    gold: 45,
-    upgrade:["gold","gold"],
-    add:[],
+    //gold: 0,
+    upgrade:["gold(2)"],
+    add:["gold(45)"],
     global:[],
     set: "?"
   },
   saturn:{
     tags:["jovian"],
-    gold: 42,
-    upgrade:["titanium"],
-    add:[],
+    //gold: 0,
+    upgrade:["titanium(1)"],
+    add:["gold(42)"],
     global:[],
     set: "?"
   },
   helion:{
     tags:["space"],
-    gold: 42,
-    upgrade:["heat","heat","heat"],
-    add:[],
+    //gold: 0,
+    upgrade:["heat(3)"],
+    add:["gold(42)"],
     global:[],
     set: "?"
   },
   celestic:{
     tags:["venus"],
-    gold: 42,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(42)"],
     global:[],
     set: "?"
   },
   ecoline:{
     tags:["plant"],
-    gold: 36,
-    upgrade:["plants","plants"],
-    add:["plants","plants","plants"],
+    //gold: 36,
+    upgrade:["plants(2)"],
+    add:["gold(36)", "plants(3)"],
     global:[],
     set: "?"
   },
   inventrix:{
     tags:["science"],
-    gold: 45,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(45)"],
     global:[],
     set: "?"
   },
   robinson:{
     tags:[],
-    gold: 47,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(47)"],
     global:[],
     set: "?"
   },
   phoblog:{
     tags:["space"],
-    gold: 23,
+    //gold: 0,
     upgrade:[],
-    add:["titanium","titanium","titanium","titanium","titanium","titanium","titanium","titanium","titanium","titanium"],
+    add:["gold(23)","titanium(10)"],
     global:[],
     set: "?"
   },
   tharsis:{
     tags:["building"],
-    gold: 40,
+    //gold: 0,
     upgrade:[],
-    add:[],
-    global:[],
+    add:["gold(65)"],
+    global:["city"],
     set: "?"
   },
   aphrodite:{
     tags:["plant", "venus"],
-    gold: 47,
-    upgrade:["plants"],
-    add:[],
+    //gold: 0,
+    upgrade:["plants(1)"],
+    add:["gold(47)"],
     global:[],
     set: "?"
   },
   msi:{
     tags:[ "venus"],
-    gold: 50,
+    //gold: 0,
     upgrade:[],
-    add:[],
+    add:["gold(50)"],
     global:[],
     set: "?"
   },
@@ -625,6 +625,13 @@ function selectCorp(){
   //updateResources(["gold"], "amount", elm.gold)
   updateResources(elm.upgrade, "quantity")
   updateResources(elm.add, "amount")
+
+    //update global
+    let elmList = elm.global
+    //console.log("selectPrelude", elm)
+    for (let i = 0; i < elmList.length; i++) {
+      buyUpgrade(elmList[i] , "gold")
+    }
 
 }
 
