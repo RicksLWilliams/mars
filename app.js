@@ -593,19 +593,6 @@ function selectCorp(){
   let e = document.getElementById("sCorp")
   let result = e.options[e.selectedIndex].value
 
-  // let elm = corp[result]
-
-  // //updateResources(["gold"], "amount", elm.gold)
-  // updateResources(elm.upgrade, "quantity")
-  // updateResources(elm.add, "amount")
-
-  //   //update global
-  //   let elmList = elm.global
-  //   //console.log("selectPrelude", elm)
-  //   for (let i = 0; i < elmList.length; i++) {
-  //     buyUpgrade(elmList[i] , "gold")
-  //   }
-
   playCard(result,corp)
 
 }
@@ -616,18 +603,7 @@ function selectPrelude(){
   let e = document.getElementById("sPrelude")
   let result = e.options[e.selectedIndex].value
 
-  let elm = prelude[result]
-//debugger
-  //updateResources(["gold"], "amount", elm.gold)
-  updateResources(elm.upgrade, "quantity")
-  updateResources(elm.add, "amount")
-
-  //update global
-  let elmList = elm.global
-  //console.log("selectPrelude", elm)
-  for (let i = 0; i < elmList.length; i++) {
-    buyUpgrade(elmList[i] , "gold")
-  }
+  playCard(result,prelude)
 
 }
 
