@@ -589,41 +589,38 @@ function mine() {
 
 }
 
-function selectCorp(){
-  let e = document.getElementById("sCorp")
-  let result = e.options[e.selectedIndex].value
+// function selectCorp(){
+//   let e = document.getElementById("sCorp")
+//   let result = e.options[e.selectedIndex].value
+//   playCard(result,corp)
+// }
 
-  playCard(result,corp)
+// function selectPrelude(){
+//   //combine these functions
+//   let e = document.getElementById("sPrelude")
+//   let result = e.options[e.selectedIndex].value
+//   playCard(result,prelude)
+// }
 
-}
-
-function selectPrelude(){
+function makeSelection(element, deck){
   //combine these functions
-  //add update global 
-  let e = document.getElementById("sPrelude")
+  let e = document.getElementById(element)
   let result = e.options[e.selectedIndex].value
 
-  playCard(result,prelude)
-
+  playCard(result,deck)
 }
 
 function playCard(card, deck){
-  //replace selectPrelude,selectCorp, selectCard?
-  //let result = item.options[item.selectedIndex].value
   let elm = deck[card]
 
-  //updateResources(["gold"], "amount", elm.gold)
   updateResources(elm.upgrade, "quantity")
   updateResources(elm.add, "amount")
 
     //update global
     let elmList = elm.global
-    //console.log("selectPrelude", elm)
     for (let i = 0; i < elmList.length; i++) {
       buyUpgrade(elmList[i] , "gold")
     }
-
-
 }
 
 function updateResources(elmList, xElm){
