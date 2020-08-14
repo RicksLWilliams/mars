@@ -290,7 +290,6 @@ let prelude = {
 let corp = {
   aridor:{
     tags:[],
-    //gold: 0,
     upgrade:[],
     add:["gold(40)"],
     global:[],
@@ -298,7 +297,6 @@ let corp = {
   },
   teractor:{
     tags:["earth"],
-    //gold: 0,
     upgrade:[],
     add:["gold(60)"],
     global:[],
@@ -306,7 +304,6 @@ let corp = {
   },
   stromcraft:{
     tags:["jovian"],
-    //gold: 0,
     upgrade:[],
     add:["gold(48)"],
     global:[],
@@ -314,7 +311,6 @@ let corp = {
   },
   polyphemos:{
     tags:[],
-    //gold: 0,
     upgrade:["gold(5)"],
     add:["gold(50)"],
     global:[],
@@ -322,7 +318,6 @@ let corp = {
   },
   cinematics:{
     tags:["building"],
-    //gold: 0,
     upgrade:[],
     add:["gold(30)", "steel(20)"],
     global:[],
@@ -330,7 +325,6 @@ let corp = {
   },
   manutech:{
     tags:["building"],
-    //gold: 0,
     upgrade:["steel(1)"],
     add:["gold(25)"],
     global:[],
@@ -338,7 +332,6 @@ let corp = {
   },
   cheung:{
     tags:["building"],
-    //gold: 44,
     upgrade:["gold(3)"],
     add:["gold(44)"],
     global:[],
@@ -346,7 +339,6 @@ let corp = {
   },
   poseidon:{
     tags:[],
-    //gold: 0,
     upgrade:[],
     add:["gold(45)"],
     global:[],
@@ -354,7 +346,6 @@ let corp = {
   },
   mining:{
     tags:["building", "building"],
-    //gold: 0,
     upgrade:["steel(1)"],
     add:["gold(30)","steel(5)"],
     global:[],
@@ -362,7 +353,6 @@ let corp = {
   },
   vitor:{
     tags:["earth"],
-    //gold: 0,
     upgrade:[],
     add:["gold(45)"],
     global:[],
@@ -370,7 +360,6 @@ let corp = {
   },
   thoregate:{
     tags:["power"],
-    //gold: 0,
     upgrade:["power(1)"],
     add:["gold(48)"],
     global:[],
@@ -378,7 +367,6 @@ let corp = {
   },
   valley:{
     tags:["earth"],
-    //gold: 0,
     upgrade:[],
     add:["gold(37)"],
     global:[],
@@ -386,7 +374,6 @@ let corp = {
   },
   point:{
     tags:["earth","space"],
-    //gold: 0,
     upgrade:["titanium(1)"],
     add:["gold(38)"],
     global:[],
@@ -394,7 +381,6 @@ let corp = {
   },
   unmi:{
     tags:["earth"],
-    //gold: 0,
     upgrade:[],
     add:["gold(40)"],
     global:[],
@@ -403,7 +389,6 @@ let corp = {
   },
   viron:{
     tags:["microb"],
-    //gold: 0,
     upgrade:[],
     add:["gold(48)"],
     global:[],
@@ -411,7 +396,6 @@ let corp = {
   },
   credicor:{
     tags:[],
-    //gold: 0,
     upgrade:[],
     add:["gold(57)"],
     global:[],
@@ -420,7 +404,6 @@ let corp = {
   },
   arklight:{
     tags:["animal"],
-    //gold: 0,
     upgrade:["gold(2)"],
     add:["gold(45)"],
     global:[],
@@ -428,7 +411,6 @@ let corp = {
   },
   saturn:{
     tags:["jovian"],
-    //gold: 0,
     upgrade:["titanium(1)"],
     add:["gold(42)"],
     global:[],
@@ -436,7 +418,6 @@ let corp = {
   },
   helion:{
     tags:["space"],
-    //gold: 0,
     upgrade:["heat(3)"],
     add:["gold(42)"],
     global:[],
@@ -444,7 +425,6 @@ let corp = {
   },
   celestic:{
     tags:["venus"],
-    //gold: 0,
     upgrade:[],
     add:["gold(42)"],
     global:[],
@@ -452,7 +432,6 @@ let corp = {
   },
   ecoline:{
     tags:["plant"],
-    //gold: 36,
     upgrade:["plants(2)"],
     add:["gold(36)", "plants(3)"],
     global:[],
@@ -460,7 +439,6 @@ let corp = {
   },
   inventrix:{
     tags:["science"],
-    //gold: 0,
     upgrade:[],
     add:["gold(45)"],
     global:[],
@@ -468,7 +446,6 @@ let corp = {
   },
   robinson:{
     tags:[],
-    //gold: 0,
     upgrade:[],
     add:["gold(47)"],
     global:[],
@@ -476,7 +453,6 @@ let corp = {
   },
   phoblog:{
     tags:["space"],
-    //gold: 0,
     upgrade:[],
     add:["gold(23)","titanium(10)"],
     global:[],
@@ -484,7 +460,6 @@ let corp = {
   },
   tharsis:{
     tags:["building"],
-    //gold: 0,
     upgrade:[],
     add:["gold(65)"],
     global:["city"],
@@ -492,7 +467,6 @@ let corp = {
   },
   aphrodite:{
     tags:["plant", "venus"],
-    //gold: 0,
     upgrade:["plants(1)"],
     add:["gold(47)"],
     global:[],
@@ -500,7 +474,6 @@ let corp = {
   },
   msi:{
     tags:[ "venus"],
-    //gold: 0,
     upgrade:[],
     add:["gold(50)"],
     global:[],
@@ -620,18 +593,20 @@ function selectCorp(){
   let e = document.getElementById("sCorp")
   let result = e.options[e.selectedIndex].value
 
-  let elm = corp[result]
+  // let elm = corp[result]
 
-  //updateResources(["gold"], "amount", elm.gold)
-  updateResources(elm.upgrade, "quantity")
-  updateResources(elm.add, "amount")
+  // //updateResources(["gold"], "amount", elm.gold)
+  // updateResources(elm.upgrade, "quantity")
+  // updateResources(elm.add, "amount")
 
-    //update global
-    let elmList = elm.global
-    //console.log("selectPrelude", elm)
-    for (let i = 0; i < elmList.length; i++) {
-      buyUpgrade(elmList[i] , "gold")
-    }
+  //   //update global
+  //   let elmList = elm.global
+  //   //console.log("selectPrelude", elm)
+  //   for (let i = 0; i < elmList.length; i++) {
+  //     buyUpgrade(elmList[i] , "gold")
+  //   }
+
+  playCard(result,corp)
 
 }
 
