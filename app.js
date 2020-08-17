@@ -3,6 +3,18 @@ let clickBonus = 1;
 let autoBonus = 0;
 let clickCount = 0;
 
+let card = {
+  demos_down:{
+    tags:["space","event"],
+    //gold: 0,
+    upgrade:[],
+    add:["gold(11)","steel(4)"],
+    global:["temperature","temperature", "temperature"],
+    set: "basic"
+  },
+
+}
+
 let prelude = {
   martian:{
     tags:["building"],
