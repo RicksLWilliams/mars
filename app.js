@@ -6,10 +6,93 @@ let clickCount = 0;
 let card = {
   demos_down:{
     tags:["space","event"],
-    //gold: 0,
     upgrade:[],
     add:["gold(11)","steel(4)"],
     global:["temperature","temperature", "temperature"],
+    set: "basic"
+  },
+  ice_asteroid:{
+    tags:["space","event"],
+    upgrade:[],
+    add:["gold(13)"],
+    global:["ocean","ocean"],
+    set: "basic"
+  },
+  imported_nitrogen:{
+    tags:["earth","space","event"],
+    upgrade:["gold(1)"],
+    add:["gold(-23)", "plants(4)"],
+    global:[],
+    set: "basic"
+  },
+  imported_hydrogen:{
+    tags:["earth","space","event"],
+    upgrade:[],
+    add:["gold(2)", "plants(3)"],
+    global:["ocean"],
+    set: "basic"
+  },
+  special_design:{
+    tags:["science","event"],
+    upgrade:[],
+    add:["gold(-4)"],
+    global:[],
+    set: "basic"
+  },
+  release_of_inert_gasses:{
+    tags:["event"],
+    upgrade:["gold(2)"],
+    add:["gold(-14)"],
+    global:[],
+    set: "basic"
+  },
+  big_asteroid:{
+    tags:["space","event"],
+    upgrade:[],
+    add:["gold(1)", "titanium(4)"],
+    global:["temperature","temperature"],
+    set: "basic"
+  },
+  coment:{
+    tags:["space","event"],
+    upgrade:[],
+    add:["gold(11)"],
+    global:["temperature","ocean"],
+    set: "basic"
+  },
+  invention_contest:{
+    tags:["science","event"],
+    upgrade:[],
+    add:["gold(-2)"],
+    global:[],
+    set: "basic"
+  },
+  convoy_from_europa:{
+    tags:["space","event"],
+    upgrade:[],
+    add:["gold(3)"],
+    global:["ocean"],
+    set: "basic"
+  },
+  nitrogen_rich_asteroid:{
+    tags:["space","event"],
+    upgrade:["plants(4)","gold(2)"],
+    add:["gold(-17)"],
+    global:["temperature"],
+    set: "basic"
+  },
+  asteroid:{
+    tags:["space","event"],
+    upgrade:[],
+    add:["titanium(2)"],
+    global:["temperature"],
+    set: "basic"
+  },
+  large_convoy:{
+    tags:["earth","space","event"],
+    upgrade:[],
+    add:["plants(5)","gold(-18)"],
+    global:["ocean"],
     set: "basic"
   },
 
