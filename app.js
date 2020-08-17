@@ -589,19 +589,6 @@ function mine() {
 
 }
 
-// function selectCorp(){
-//   let e = document.getElementById("sCorp")
-//   let result = e.options[e.selectedIndex].value
-//   playCard(result,corp)
-// }
-
-// function selectPrelude(){
-//   //combine these functions
-//   let e = document.getElementById("sPrelude")
-//   let result = e.options[e.selectedIndex].value
-//   playCard(result,prelude)
-// }
-
 function makeSelection(element, deck){
   //combine these functions
   let e = document.getElementById(element)
