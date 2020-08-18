@@ -95,6 +95,97 @@ let card = {
     global:["ocean"],
     set: "basic"
   },
+  lava_flows:{
+    tags:["event"],
+    upgrade:[],
+    add:["gold(10)"],
+    global:["temperature","temperature"],
+    set: "basic"
+  },
+  land_claim:{
+    tags:["event"],
+    upgrade:[],
+    add:["gold(-1)"],
+    global:[],
+    set: "basic"
+  },
+  permafrost_extraction:{
+    tags:["event"],
+    upgrade:[],
+    add:["gold(10)"],
+    global:["ocean"],
+    set: "basic"
+  },
+  aerobraked_ammonia_asteroid:{
+    tags:["space","event"],
+    upgrade:["heat(3)", "plants(1)"],
+    add:["gold(-26)"],
+    global:[],
+    set: "basic"
+  },
+  towing_a_comet:{
+    tags:["space","event"],
+    upgrade:[],
+    add:["gold(18)","plants(2)"],
+    global:["ocean", "greenery"],
+    set: "basic"
+  },
+  mining_expedition:{
+    tags:["event"],
+    upgrade:[],
+    add:["gold(11)","steel(2)"],
+    global:["greenery"],
+    set: "basic"
+  },
+  ice_cap_melting:{
+    tags:["event"],
+    upgrade:[],
+    add:["gold(13)"],
+    global:["ocean"],
+    set: "basic"
+  },
+  subterranean_reservoir:{
+    tags:["event"],
+    upgrade:[],
+    add:["gold(7)"],
+    global:["ocean"],
+    set: "basic"
+  },
+  import_of_advanced_ghg:{
+    tags:["earth","space","event"],
+    upgrade:["heat(2)"],
+    add:["gold(-9)"],
+    global:[],
+    set: "basic"
+  },
+  imported_ghg:{
+    tags:["earth","space","event"],
+    upgrade:["heat(1)"],
+    add:["gold(-7)","heat(3)"],
+    global:[],
+    set: "basic"
+  },
+  local_heat_trappimng:{
+    tags:["event"],
+    upgrade:[],
+    add:["gold(-1)","heat(-5)","plants(4)"],
+    global:[],
+    set: "basic"
+  },
+  giant_ice_asteroid:{
+    tags:["space","event"],
+    upgrade:[],
+    add:["gold(28)"],
+    global:["ocean","ocean","temperature","temperature"],
+    set: "basic"
+  },
+  flooding:{
+    tags:["event"],
+    upgrade:[],
+    add:["gold(11)"],
+    global:["ocean"],
+    set: "basic"
+  },
 
 }
 
