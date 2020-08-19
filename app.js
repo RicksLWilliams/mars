@@ -221,6 +221,13 @@ let card = {
     global:[],
     set: "basic"
   },
+  solar_power:{
+    tags:["power","building"],
+    upgrade:["power(1)"],
+    add:["gold(-11)"],
+    global:[],
+    set: "basic"
+  },
 
 }
 
