@@ -228,6 +228,35 @@ let card = {
     global:[],
     set: "basic"
   },
+  industrial_microbes:{
+    tags:["microbe","building"],
+    upgrade:["power(1)","steel(1)"],
+    add:["gold(-12)"],
+    global:[],
+    set: "basic"
+  },
+  strip_mine:{
+    tags:["building"],
+    upgrade:["power(-2)","steel(2)","titanium(1)"],
+    add:["gold(21)"],
+    global:["greenery", "greenery"],
+    set: "basic"
+  },
+  building_industires:{
+    tags:["building"],
+    upgrade:["power(-1)","steel(2)"],
+    add:["gold(-6)"],
+    global:[],
+    set: "basic"
+  },
+  urbanized_area:{
+    tags:["building","city"],
+    upgrade:["power(-1)","gold(1)"],
+    add:["gold(15)"],
+    global:["city"],
+    set: "basic"
+  },
+
 
 }
 
