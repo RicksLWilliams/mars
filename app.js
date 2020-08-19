@@ -186,6 +186,41 @@ let card = {
     global:["ocean"],
     set: "basic"
   },
+  geothermal_power:{
+    tags:["power","building"],
+    upgrade:["power(2)"],
+    add:["gold(-11)"],
+    global:[],
+    set: "basic"
+  },
+  lunar_beam:{
+    tags:["power","earth"],
+    upgrade:["power(2)","heat(2)","gold(-2)"],
+    add:["gold(-13)"],
+    global:[],
+    set: "basic"
+  },
+  giant_space_mirror:{
+    tags:["power","space"],
+    upgrade:["power(3)"],
+    add:["gold(-17)"],
+    global:[],
+    set: "basic"
+  },
+  breathing_filters:{
+    tags:["science"],
+    upgrade:[],
+    add:["gold(-11)"],
+    global:[],
+    set: "basic"
+  },
+  kelp_farming:{
+    tags:["plant"],
+    upgrade:["gold(2)", "plants(3)"],
+    add:["gold(-17)","plants(2)"],
+    global:[],
+    set: "basic"
+  },
 
 }
 
