@@ -256,6 +256,13 @@ let card = {
     global:["city"],
     set: "basic"
   },
+  beam_from_a_thorium_asteroid:{
+    tags:["jovian","space","power"],
+    upgrade:["power(3)","heat(3)"],
+    add:["gold(-32)"],
+    global:[],
+    set: "basic"
+  },
 
 
 }
