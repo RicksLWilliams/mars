@@ -263,6 +263,41 @@ let card = {
     global:[],
     set: "basic"
   },
+  ganymede_colony:{
+    tags:["jovian","space","city"],
+    upgrade:[],
+    add:["gold(5)"],
+    global:["city"],
+    set: "basic"
+  },
+  asteroid_mining:{
+    tags:["jovian","space"],
+    upgrade:["titanium(2)"],
+    add:["gold(-30)"],
+    global:[],
+    set: "basic"
+  },
+  dust_seals:{
+    tags:[],
+    upgrade:[],
+    add:["gold(-2)"],
+    global:[],
+    set: "basic"
+  },
+  fuel_generators:{
+    tags:["power", "building"],
+    upgrade:["gold(-1)", "power(1)"],
+    add:["gold(-1)"],
+    global:[],
+    set: "basic"
+  },
+  natural_preserve:{
+    tags:["science", "building"],
+    upgrade:["gold(1)", ],
+    add:["gold(-9)"],
+    global:[],
+    set: "basic"
+  },
 
 
 }
