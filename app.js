@@ -298,6 +298,13 @@ let card = {
     global:[],
     set: "basic"
   },
+  windmills:{
+    tags:["power", "building"],
+    upgrade:["power(1)"],
+    add:["gold(-6)"],
+    global:[],
+    set: "basic"
+  },
 
 
 }
