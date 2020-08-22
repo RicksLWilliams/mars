@@ -305,6 +305,20 @@ let card = {
     global:[],
     set: "basic"
   },
+  mangrove:{
+    tags:["plant"],
+    upgrade:[],
+    add:["gold(11)"],
+    global:["greenery"],
+    set: "basic"
+  },
+  archaebacteria:{
+    tags:["microb"],
+    upgrade:["plants(1)"],
+    add:["gold(-6)"],
+    global:[],
+    set: "basic"
+  },
 
 
 }
