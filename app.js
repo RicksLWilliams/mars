@@ -333,6 +333,13 @@ let card = {
     global:[],
     set: "basic"
   },
+  archaebacteria4:{
+    tags:["microb"],
+    upgrade:["plants(1)"],
+    add:["gold(-6)"],
+    global:[],
+    set: "basic"
+  },
 
 
 }
